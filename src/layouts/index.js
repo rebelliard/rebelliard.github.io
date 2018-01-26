@@ -3,8 +3,6 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import { Container } from 'react-responsive-grid'
 
-import { rhythm, scale } from '../utils/typography'
-
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -17,54 +15,22 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Rafael Belliard
-          </Link>
+        <h1>
+          <Link to={'/'}>Rafael Belliard</Link>
         </h1>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Blog
-          </Link>
-        </h3>
+        <div>
+          <Link to={'/'}>Home</Link>
+          <h3>
+            <Link to={'/blog/'}>Blog</Link>
+          </h3>
+        </div>
       )
     }
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <Container>
         {header}
         {children()}
       </Container>
