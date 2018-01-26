@@ -63,7 +63,9 @@ class BlogIndex extends React.Component {
           <small>
             If you're thinking: "<i>Whoa</i>, what an ugly site!", you're right!
             You're browsing my site in the middle of a complete redesign
-            from Jekyll + Generic Theme to GatsbyJS + CSS Grid.
+            from Jekyll + Generic Theme to
+            &nbsp;<a href="https://www.gatsbyjs.org/" target="_blank">GatsbyJS</a> +
+            &nbsp;<a href="https://gridbyexample.com/" target="_blank">CSS Grid</a>.
             This is my way of forcing myself to do it. <span rel="icon">😂</span>
           </small>
         </p>
