@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-js-6c8f196195a0ab2b2334.js" as="script"/><link rel="preload" href="/component---src-templates-blog-post-js-d45fea47536122a9e56b.js" as="script"/><link rel="preload" href="/path---blog-introduction-greedy-algorithms-b37a8692746c1b3ead3b.js" as="script"/><link rel="preload" href="/app-3f8200e361379a917062.js" as="script"/><link rel="preload" href="/commons-ec4b1d6aa73cf4e88b6d.js" as="script"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">Introduction to greedy algorithms | Rafael E. Belliard: Software Developer</title><style id="gatsby-inlined-css"></style></head><body><div id="___gatsby"><section data-reactroot="" data-reactid="1" data-react-checksum="-804538071"><div data-reactid="2"><a href="/" data-reactid="3">Home</a><!-- react-text: 4 --> <!-- /react-text --><a href="/blog/" data-reactid="5">Blog</a><!-- react-text: 6 --> <!-- /react-text --><a href="/about/" data-reactid="7">About</a></div><div data-reactid="8"><!-- react-empty: 9 --><h1 data-reactid="10">Introduction to greedy algorithms</h1><p data-reactid="11">July 11, 2016</p><div data-reactid="12"><p>{{ page.teaser }}</p>
+<h2>Basic concepts</h2>
+<ul>
+<li>An <strong>optimal solution</strong> is a feasible solution with the largest (or smallest) objective function value.</li>
+<li>A <strong>local optimum</strong> can be obtained by finding the optimal solution within a neighboring set of candidate solutions.</li>
+<li>A <strong>global optimum</strong> can be obtained by finding the optimal solutions among all possible solutions.</li>
+</ul>
+<h2>Problem characteristics</h2>
+<ol>
+<li><strong>Greedy choice property</strong>: a global optimum can be obtained by the selection of a local optimum.</li>
+<li><strong>Optimal substructure</strong>: a global optimum can be obtained by using the local optimum of its subproblems.</li>
+</ol>
+<h2>General strategies</h2>
+<h3>“Greedy stays ahead” arguments</h3>
+<p>Using “Greedy stays ahead” strategy, the algorithm is always at least as far ahead as the optimal solution of each iteration.</p>
+<ol>
+<li>
+<p><strong>Define your solutions.</strong> Define what object will represent the global optimum, and what form each local optimum takes.</p>
+</li>
+<li>
+<p><strong>Find a measure.</strong> Find a series of measurements to ensure your algorithm stays ahead of the local optimums you’ve found.</p>
+</li>
+<li>
+<p><strong>Proove greedy stays ahead.</strong> <em>Inductively</em> show that the local optimums are as good as any of the solution’s measures.</p>
+</li>
+<li>
+<p><em>Mathematical induction:</em> a means of proving a theorem by showing that if it is true of any particular case, it is true of the next case in a series, and then showing that it is indeed true in one particular case.</p>
+</li>
+<li>
+<p><strong>Prove optimality.</strong> By <em>contradiction</em>, prove that since the algorithm stays ahead of its previous measures, it must produce an optimal solution.</p>
+</li>
+<li>
+<p><em>Mathematical proof by contradiction:</em> assume that a statement is not true and then to show that that assumption leads to a contradiction. In the case of trying to prove this is equivalent to assuming that That is, to assume that is true and is false.</p>
+</li>
+</ol>
+<h3>Exchange arguments</h3>
+<p>The greedy exchange strategy is used to prove the correctness of greedy algorithms by transforming the global optimum iteratively without worsening its quality.</p>
+<ol>
+<li><strong>Define your solutions.</strong> Define an object <code>A</code> that will represent the global optimum and an object <code>O</code> that represents a local optimum.</li>
+<li><strong>Compare solutions.</strong> Show that if the global optimum is not the same as the local optimum, either:</li>
+<li>There is an element in <code>O</code> that is not in <code>A</code>.</li>
+<li>There are two elements of <code>O</code> that are in a different order in <code>A</code>.</li>
+<li><strong>Exchange pieces.</strong> Gradually modify the local optimum <code>O</code> until it is the same as the algorithm’s global optimum <code>A</code>.</li>
+<li><strong>Iterate.</strong> Decrease the number of differences between <code>A</code> and <code>O</code>, until you can turn <code>A</code> into <code>O</code> without worsening the quality of the solution. Inductively, <code>O</code> must be optimal.</li>
+</ol>
+<h2>Example: Change-making problem</h2>
+<p>This <a href="https://en.wikipedia.org/wiki/Change-making_problem">classical problem</a> addresses the following question: How can a given amount of money be made with the least number of coins of given denominations 1, 5, 10 and 25?</p>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>Input:
+  37
+
+Output:
+  4
+
+Explanation:
+  37 = 25 + 10 + 1 + 1</code></pre>
+      </div>
+<p>Implementation in Python:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>def change_making_problem(n):
+    count = 0
+    for coin in [25, 10, 5, 1]:
+        # Largest coin not greater
+        # than the remaining amount.
+        while n >= coin:
+            count += 1
+            n -= coin
+    return count</code></pre>
+      </div>
+<h3>Read more</h3>
+<ul>
+<li><a href="http://web.stanford.edu/class/archive/cs/cs161/cs161.1138/handouts/120%20Guide%20to%20Greedy%20Algorithms.pdf">Guide to Greedy Algorithms</a>.</li>
+<li><a href="http://www.cs.cornell.edu/courses/cs482/2004su/handouts/greedy_ahead.pdf">Proof Techniques: Greedy Stays Ahead</a>.</li>
+<li><a href="http://www.cs.cornell.edu/courses/cs482/2003su/handouts/greedy_exchange.pdf">Proof Techniques: Greedy Exchange</a>.</li>
+</ul></div><hr data-reactid="13"/><ul data-reactid="14"><li data-reactid="15"><a rel="prev" href="/blog/javascript-web-frameworks-trends-2016" data-reactid="16"><!-- react-text: 17 -->← <!-- /react-text --><!-- react-text: 18 -->JavaScript web frameworks trends for 2016<!-- /react-text --></a></li><li data-reactid="19"><a rel="next" href="/blog/react-driven-by-facebook-principle-concerns" data-reactid="20"><!-- react-text: 21 -->React&#x27;s “Driven by Facebook” principle concerns me<!-- /react-text --><!-- react-text: 22 --> →<!-- /react-text --></a></li></ul></div></section></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-3f8200e361379a917062.js","99219681209289":"component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js","107818501498521":"component---src-templates-blog-post-js-d45fea47536122a9e56b.js","35783957827783":"component---src-pages-index-js-b50025fdfaff77ea035e.js","152176518627018":"component---src-pages-blog-index-js-33c774ed7b798222c2e5.js","60335399758886":"path----557518bd178906f8d58a.js","210333531512890":"path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js","273950069227526":"path---about-9f7ccfcfb3d356ba58ec.js","94816480091785":"path---blog-fix-unprotected-private-key-file-on-macos-f883f4037f3d8e66d372.js","159028991451934":"path---blog-fix-python-2-7-12-on-macos-sierra-94d03d6df64e3ec359fa.js","221529548712416":"path---blog-integrating-angularjs-django-be78d0d793615e814479.js","94859958604426":"path---blog-8-tips-to-become-an-effective-remote-developer-26ebd60a543b6189839f.js","13467135427313":"path---blog-response-to-react-design-principles-interpretation-by-react-members-6efc42b4f7a7aa962ff1.js","24130961910084":"path---blog-react-driven-by-facebook-principle-concerns-df1f3c58e6cb9769cc7d.js","99004157742242":"path---blog-introduction-greedy-algorithms-b37a8692746c1b3ead3b.js","65528465209274":"path---blog-javascript-web-frameworks-trends-2016-9d011e6668b76ddb7221.js","174085948463904":"path---blog-how-do-i-become-a-better-developer-655315ffcb0df4b358e3.js","158395133950255":"path---blog-thoughts-on-giving-my-first-tech-talk-8dddcef797b279dcc386.js","29959799103960":"path---blog-managing-front-end-components-with-bower-65b45c69abb74a4c71ed.js","116830110657269":"path---blog-basic-custom-domain-hosting-with-github-pages-6119504503e8e0d53f05.js","47838559778689":"path---blog-enabling-scrolling-using-the-microsoft-natural-ergonomic-keyboard-4000-s-zoom-slider-on-ubuntu-1210-3c33fabdc0ce16f0db19.js","142629428675168":"path---index-03dfc2e47198e747168a.js","49683490770531":"path---blog-cbeee7a0c3f1cce6e1c4.js","114276838955818":"component---src-layouts-index-js-6c8f196195a0ab2b2334.js"}/*]]>*/</script><script>
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34015084-1', 'auto');
+  </script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/commons-ec4b1d6aa73cf4e88b6d.js","/app-3f8200e361379a917062.js","/path---blog-introduction-greedy-algorithms-b37a8692746c1b3ead3b.js","/component---src-templates-blog-post-js-d45fea47536122a9e56b.js","/component---src-layouts-index-js-6c8f196195a0ab2b2334.js"])/*]]>*/</script></body></html>
