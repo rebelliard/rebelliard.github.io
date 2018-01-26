@@ -1,12 +1,9 @@
 {
-  "name": "rafael.do",
+  "name": "rebelliard",
   "description": "Rafael Belliard",
   "private": true,
   "version": "1.0.0",
   "author": "Rafael Belliard <me@rebelliard.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
   "dependencies": {
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
@@ -31,7 +28,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://rebelliard.com",
   "keywords": [
     "gatsby"
   ],
@@ -39,7 +36,10 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/rebelliard/rebelliard.github.io.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "scripts": {
     "dev": "gatsby develop",
@@ -48,7 +48,7 @@
     "format": "prettier --no-semi --single-quote --write --print-width 100 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
