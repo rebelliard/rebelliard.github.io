@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rafael Belliard',
-    author: 'Rafael Belliard',
+    title: 'Rafael E. Belliard: Software Developer',
+    author: 'Rafael E. Belliard',
     description: 'My personal site.',
     siteUrl: 'https://rafael.do/',
   },
-  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
