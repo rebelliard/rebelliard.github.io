@@ -11,9 +11,18 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <h3>
-          <Link to={'/blog/'}>Blog</Link>
-        </h3>
+        {posts.map(({ node }) => {
+          const title = get(node, 'frontmatter.title') || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3>
+                <Link to={node.fields.slug}>{title}</Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          )
+        })}
       </div>
     )
   }
@@ -22,7 +31,7 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     site {
       siteMetadata {
         title
