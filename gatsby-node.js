@@ -24,6 +24,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     description
                     tags
                     redirectFrom
+                    disableListing
                   }
                 }
               }
