@@ -2,7 +2,7 @@
 layout: post
 title: "Fix “UNPROTECTED PRIVATE KEY FILE” on MacOS Sierra"
 date: '2016-09-22'
-permalink: "/blog/fix-unprotected-private-key-file-on-macos"
+permalink: "/blog/fix-unprotected-private-key-file-on-macos/"
 description: "It is recommended that your private key files are NOT accessible by others."
 teaser:      "It is recommended that your private key files are NOT accessible by others."
 tags: ['setup']

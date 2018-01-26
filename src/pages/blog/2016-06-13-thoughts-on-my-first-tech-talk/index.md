@@ -2,7 +2,7 @@
 layout: post
 title: "Thoughts on giving my first tech talk"
 date: '2016-06-13'
-permalink: "/blog/thoughts-on-giving-my-first-tech-talk"
+permalink: "/blog/thoughts-on-giving-my-first-tech-talk/"
 redirectFrom: ["/thoughts-on-giving-my-first-tech-talk/"]
 description: "Thoughts on talking about Django Migrations at Python Dominicana 059."
 tags: ['growth']

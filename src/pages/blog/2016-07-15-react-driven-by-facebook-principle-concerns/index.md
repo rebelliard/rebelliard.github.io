@@ -3,7 +3,7 @@ layout: post
 title: "React's “Driven by Facebook” principle concerns me"
 date: '2016-07-15'
 date_modified: '2016-07-16'
-permalink: "/blog/react-driven-by-facebook-principle-concerns"
+permalink: "/blog/react-driven-by-facebook-principle-concerns/"
 description: "React's “Design Principles” article gave me a rollercoaster of emotions that reminded me of Facebook's ill-fated Parse service."
 teaser: "React's “Design Principles” article gave me a rollercoaster of emotions that reminded me of Facebook's ill-fated Parse service."
 #image: ./images/react-logo.png

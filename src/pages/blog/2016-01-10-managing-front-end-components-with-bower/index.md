@@ -2,7 +2,7 @@
 layout: post
 title: Managing front end components with Bower
 date: '2016-01-10'
-permalink: "/blog/managing-front-end-components-with-bower"
+permalink: "/blog/managing-front-end-components-with-bower/"
 redirectFrom: ["/managing-front-end-components-with-bower/"]
 description: "Learn the basics of maintaining your third-party assets using the Bower package manager."
 tags: ['javascript']

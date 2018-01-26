@@ -2,7 +2,7 @@
 layout: post
 title: 'JavaScript web frameworks trends for 2016'
 date: '2016-07-01'
-permalink: "/blog/javascript-web-frameworks-trends-2016"
+permalink: "/blog/javascript-web-frameworks-trends-2016/"
 redirectFrom: ["/javascript-web-frameworks-trends-2016/"]
 description: "A close look at the worldwide interest in client-side frameworks between January 2014 and May 2016."
 tags: ['javascript']

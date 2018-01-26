@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to greedy algorithms"
 date: '2016-07-11'
-permalink: "/blog/introduction-greedy-algorithms"
+permalink: "/blog/introduction-greedy-algorithms/"
 description: "Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step."
 teaser: "Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step."
 #image: ./images/mr-burns.jpg

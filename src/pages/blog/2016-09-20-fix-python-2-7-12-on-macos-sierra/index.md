@@ -2,7 +2,7 @@
 layout: post
 title: "Fix Homebrew's Python 2.7.12 --universal on MacOS Sierra"
 date: '2016-09-21'
-permalink: "/blog/fix-python-2-7-12-on-macos-sierra"
+permalink: "/blog/fix-python-2-7-12-on-macos-sierra/"
 description: "Avoid issues installing Python on MacOS Sierra due of deprecated dependencies."
 teaser:      "Avoid issues installing Python on MacOS Sierra due of deprecated dependencies."
 tags: ['setup']

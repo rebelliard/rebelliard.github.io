@@ -2,7 +2,7 @@
 layout: post
 title: "Basic custom domain hosting with GitHub Pages"
 date: '2011-11-02'
-permalink: "/blog/basic-custom-domain-hosting-with-github-pages"
+permalink: "/blog/basic-custom-domain-hosting-with-github-pages/"
 description: "Basic custom domain hosting with GitHub Pages"
 tags: ['setup']
 #image: ./images/github-logo.png

@@ -2,7 +2,7 @@
 layout: post
 title: "Integrating AngularJS with Django"
 date: '2016-08-08'
-permalink: "/blog/integrating-angularjs-django"
+permalink: "/blog/integrating-angularjs-django/"
 description: "How to create a single-page application using AngularJS and the Django Framework."
 teaser:      "How to create a single-page application using AngularJS and the Django Framework."
 tags: ['angularjs']

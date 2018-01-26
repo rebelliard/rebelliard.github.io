@@ -2,7 +2,7 @@
 layout: post
 title: "Response to my interpretation of React's “Design Principles”"
 date: '2016-07-16'
-permalink: "/blog/response-to-react-design-principles-interpretation-by-react-members"
+permalink: "/blog/response-to-react-design-principles-interpretation-by-react-members/"
 description: "Clarification of my concerns about React's “Design Principles” by members of the React team."
 teaser:      "Clarification of my concerns about React's “Design Principles” by members of the React team."
 #image: ./images/react-logo-reload.png
