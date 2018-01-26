@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import { Container } from 'react-responsive-grid'
 
 class Template extends React.Component {
   render() {
@@ -30,10 +29,10 @@ class Template extends React.Component {
       )
     }
     return (
-      <Container>
+      <div>
         {header}
         {children()}
-      </Container>
+      </div>
     )
   }
 }
