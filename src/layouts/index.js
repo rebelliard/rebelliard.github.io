@@ -14,25 +14,29 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1>
-          <Link to={'/'}>Rafael Belliard</Link>
-        </h1>
+        <header>
+          <h1 style={{marginBottom: '4px'}}>
+            Rafael E. Belliard
+          </h1>
+          <h2 style={{fontSize:'1.1em'}}>Software Developer</h2>
+        </header>
       )
     } else {
       header = (
         <div>
           <Link to={'/'}>Home</Link>
-          <h3>
-            <Link to={'/blog/'}>Blog</Link>
-          </h3>
+          &nbsp;
+          <Link to={'/blog/'}>Blog</Link>
+          &nbsp;
+          <Link to={'/about/'}>About</Link>
         </div>
       )
     }
     return (
-      <div>
+      <section>
         {header}
         {children()}
-      </div>
+      </section>
     )
   }
 }
