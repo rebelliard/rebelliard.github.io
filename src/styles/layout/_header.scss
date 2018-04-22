@@ -6,8 +6,20 @@
   padding-bottom: 4em;
 
   .title {
+    font-size: 32px;
     grid-area: a;
+    margin-top: 21.4px;
+    margin-bottom: 21.4px;
     text-align: left;
+
+    a {
+      color: var(--heading-color);
+      font-weight: var(--font-weight);
+
+      &:hover {
+        color: var(--highlight-color);
+      }
+    }
   }
 
   .nav {
@@ -22,17 +34,6 @@
 
   .header-item {
     display: inline-block;
-  }
-
-  h1 {
-    a {
-      color: var(--heading-color);
-      font-weight: var(--font-weight);
-
-      &:hover {
-        color: var(--highlight-color);
-      }
-    }
   }
 }
 
