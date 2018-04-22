@@ -10,6 +10,7 @@ const Head = props => {
   }
 
   const pathname = props.location.pathname === '/' ? '' : props.location.pathname
+  const title = `${props.title}${props.location.pathname === '/' ? '' : ' | rafael.do'}`
 
   return (
     <Helmet>
@@ -19,7 +20,7 @@ const Head = props => {
         itemType="http://schema.org/WebSite"
         lang={props.language || 'en'}/>
 
-      <title>{props.title}</title>
+      <title>{title}</title>
       <meta name="description" content={props.description}/>
       <meta property="og:type" content="article"/>
       <meta name="twitter:card" content={props.twitterCard || 'summary'}/>
