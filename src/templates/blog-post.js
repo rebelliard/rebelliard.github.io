@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Head from '../components/Head'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
@@ -10,14 +10,26 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+      <main id="main" className="section main">
+        <Head
+          title={post.frontmatter.title | siteTitle}
+          description={post.frontmatter.description}/>
         <h1>{post.frontmatter.title}</h1>
-        {post.frontmatter.date ? <p>{post.frontmatter.date}</p> : ''}
+        <p>
+          {post.frontmatter.date}
+        </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
+        <hr/>
 
-        <ul>
+        <ul
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
+            padding: 0,
+          }}
+        >
           {previous && (
             <li>
               <Link to={previous.fields.slug} rel="prev">
@@ -34,7 +46,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-      </div>
+      </main>
     )
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import Head from '../../components/Head'
 
 class BlogIndex extends React.Component {
   render() {
@@ -9,23 +9,25 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
-        <Helmet title={siteTitle} />
+      <main id="main" className="section main">
+        <Head
+          title={siteTitle}
+          description="Blog index."/>
         {posts
           .filter(post => !get(post, 'node.frontmatter.disableListing'))
           .map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (
-              <div key={node.fields.slug}>
-                <h3>
+              <article key={node.fields.slug}>
+                <h2>
                   <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </div>
+                </h2>
+                <time itemProp="datePublished">{node.frontmatter.date}</time>
+                <summary dangerouslySetInnerHTML={{ __html: node.excerpt }}></summary>
+              </article>
             )
           })}
-      </div>
+      </main>
     )
   }
 }

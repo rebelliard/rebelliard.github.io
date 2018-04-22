@@ -1,0 +1,11 @@
+// Using CSS variables until I migrate to SCSS' own.
+:root {
+  --font-weight: 300;
+  --main-bg-color: #22297c;
+  --main-color: rgba(255,255,255,0.7);
+  --link-color: #f0f1f6;
+  --hero-color: #f0f1f6;
+  --heading-color: #FFF53C;
+  --highlight-color: #00C5AF;
+  --breakpoint-xs: 400px;
+}

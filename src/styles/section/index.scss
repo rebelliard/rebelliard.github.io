@@ -1,0 +1,43 @@
+.main {
+  border: 7px solid var(--highlight-color);
+  box-shadow: 5px 6px 0 0 #FFF53C;
+  padding: 40px;
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  .detail {
+    font-family: 'Open Sans', sans-serif;
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      padding-left: 12px;
+    }
+  }
+
+
+  .hero {
+    a {
+      color: var(--heading-color);
+
+      &:hover {
+        color: var(--highlight-color);
+      }
+    }
+
+    p {
+      color: var(--hero-color);
+      font-size: 1.15em;
+      line-height: 27px;
+    }
+  }
+
+  @media screen and (max-width: var(--breakpoint-xs)) {
+    padding: 15px;
+  }
+}
+

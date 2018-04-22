@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2.3em;
+
+  .social-icon {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+
+    &:hover {
+      filter: brightness(0) invert(1); /* white filter. */
+    }
+  }
+}
+
+@media screen and (max-width: var(--breakpoint-xs)) {
+  .footer {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+
+    .social-icon {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+}

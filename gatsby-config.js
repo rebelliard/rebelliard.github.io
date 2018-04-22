@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rafael E. Belliard: Software Developer',
+    title: 'rafael.do',
     author: 'Rafael E. Belliard',
     description: 'My personal site.',
     siteUrl: 'https://rafael.do/',
   },
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,11 +41,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-34015084-1',
+        // trackingId: 'UA-34015084-1',
       },
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Open Sans`,
+          `Roboto Slab:300,400`,
+        ]
+      }
+    }
   ],
 }

@@ -1,0 +1,49 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a b b b";
+  align-items: center;
+  padding-bottom: 4em;
+
+  .title {
+    grid-area: a;
+    text-align: left;
+  }
+
+  .nav {
+    display: inline-block;
+    grid-area: b;
+    text-align: right;
+  }
+
+  .nav-item {
+    margin-left: 2em;
+  }
+
+  .header-item {
+    display: inline-block;
+  }
+
+  h1 {
+    a {
+      color: var(--heading-color);
+      font-weight: var(--font-weight);
+
+      &:hover {
+        color: var(--highlight-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: var(--breakpoint-xs)) {
+  .header {
+    padding-bottom: 2em;
+
+    .nav-item {
+      margin-left: 0.65em;
+    }
+  }
+}
+
+
