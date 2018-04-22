@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
     return (
       <main id="main" className="section main">
         <Head
-          title={siteTitle}
+          title='Blog'
           description="Blog index."
           location={location}/>
         {posts
