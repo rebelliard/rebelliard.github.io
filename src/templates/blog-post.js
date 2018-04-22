@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <main id="main" className="section main">
         <Head
-          title={post.frontmatter.title | siteTitle}
+          title={post.frontmatter.title || siteTitle}
           description={post.frontmatter.description}
           location={location}/>
         <h1>{post.frontmatter.title}</h1>
