@@ -6,6 +6,7 @@ import get from 'lodash/get'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const { location } = this.props
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
 
@@ -13,7 +14,8 @@ class BlogPostTemplate extends React.Component {
       <main id="main" className="section main">
         <Head
           title={post.frontmatter.title | siteTitle}
-          description={post.frontmatter.description}/>
+          description={post.frontmatter.description}
+          location={location}/>
         <h1>{post.frontmatter.title}</h1>
         <p>
           {post.frontmatter.date}

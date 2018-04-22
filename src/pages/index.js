@@ -84,12 +84,14 @@ class BlogIndex extends React.Component {
 
   Main = () => {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const { location } = this.props
 
     return (
       <main id="main" className="section main">
         <Head
           title={siteTitle}
-          description="Personal website of Rafael Belliard."/>
+          description="Personal website of Rafael Belliard."
+          location={location}/>
         <article className="hero">
           <h2>
             My name is Rafael Belliard and I make
