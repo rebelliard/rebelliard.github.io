@@ -12,7 +12,7 @@ class Template extends React.Component {
 
     return (
       <header className="section header">
-        {location.pathname === rootPath
+        {[rootPath, '/blog/'].includes(location.pathname)
           ? <h1 className="header-item title">
               <Link to={'/'}>rafael.do</Link>
             </h1>
