@@ -4,11 +4,21 @@ import '../styles/main.scss'
 
 class Template extends React.Component {
   Header = () => {
+    const { location } = this.props
+    let rootPath = '/'
+    if (typeof __PREFIX_PATHS__ !== 'undefined' && __PREFIX_PATHS__) {
+      rootPath = __PATH_PREFIX__ + '/'
+    }
+
     return (
       <header className="section header">
-        <h1 className="header-item title">
-          <Link to={'/'}>rafael.do</Link>
-        </h1>
+        {location.pathname === rootPath
+          ? <h1 className="header-item title">
+              <Link to={'/'}>rafael.do</Link>
+            </h1>
+          : <div className="header-item title">
+              <Link to={'/'}>rafael.do</Link>
+            </div>}
         <nav className="header-item nav">
           <Link className="nav-item" to={'/about/'}>
             About
