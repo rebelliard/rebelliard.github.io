@@ -14,6 +14,10 @@ p {
 }
 
 a {
+  // React Click events not firing on mobile
+  // @see https://stackoverflow.com/a/27525707
+  cursor: pointer;
+
   color: var(--link-color);
   -webkit-text-decoration-line: none; // Safari
   text-decoration-line: none;

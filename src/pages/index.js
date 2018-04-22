@@ -102,7 +102,7 @@ class BlogIndex extends React.Component {
             frontend code, APIs and databases.{' '}
             {this.state.showDetails
               ? null
-              : <a href="" onClick={this.toggleDetails}>More about me.</a>
+              : <a onClick={this.toggleDetails}>More about me.</a>
             }
           </p>
         </article>
