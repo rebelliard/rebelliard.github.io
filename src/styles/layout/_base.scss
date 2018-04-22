@@ -52,11 +52,57 @@ h3 {
 .section {
   width: 44%;
   min-width: 640px;
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+
+pre {
+  // Wrap text and maintain white-space within the pre tag.
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  overflow: auto;
 }
 
 @media screen and (max-width: 660px) {
   .section {
     min-width: auto;
     width: 98%;
+  }
+}
+
+/**
+ * TODO: Fix issue where the <pre> is overflowing
+ * the grid element.
+ */
+pre {
+  @media screen and (max-width: 660px) {
+    width: 500px;
+    white-space: normal;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 549px) {
+    width: 340px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 320px;
   }
 }
