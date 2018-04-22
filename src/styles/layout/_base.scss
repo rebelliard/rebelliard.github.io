@@ -88,6 +88,7 @@ pre {
   @media screen and (max-width: 660px) {
     width: 500px;
     white-space: normal;
+    text-overflow: initial;
   }
 
   @media screen and (max-width: 600px) {
