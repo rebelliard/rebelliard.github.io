@@ -11,27 +11,17 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <main id="main" className="section main">
+      <main id="main" className="section main blog blogpost">
         <Head
           title={post.frontmatter.title || siteTitle}
           description={post.frontmatter.description}
           location={location}/>
         <h1>{post.frontmatter.title}</h1>
-        <p>
-          {post.frontmatter.date}
-        </p>
+        <time itemProp="datePublished">{post.frontmatter.date}</time>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul className="siblings">
           {previous && (
             <li>
               <Link to={previous.fields.slug} rel="prev">
