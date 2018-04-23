@@ -18,9 +18,9 @@ class BlogPostTemplate extends React.Component {
           location={location}/>
         <h1>{post.frontmatter.title}</h1>
         <time itemProp="datePublished">{post.frontmatter.date}</time>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
 
+        <hr className="divider"/>
         <ul className="siblings">
           {previous && (
             <li>
