@@ -1,5 +1,7 @@
 // Using CSS variables until I migrate to SCSS' own.
 :root {
+  --font--serif: 'Roboto Slab', serif;
+  --font--sans: 'Open Sans', sans-serif;;
   --font-weight: 300;
   --main-bg-color: #22297c;
   --main-color: rgba(255,255,255,0.7);

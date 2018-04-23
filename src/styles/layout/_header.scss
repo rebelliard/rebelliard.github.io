@@ -6,8 +6,10 @@
   padding-bottom: 4em;
 
   .title {
+    font-family: var(--font--serif);
     font-size: 32px;
     grid-area: a;
+    letter-spacing: normal;
     margin-top: 21.4px;
     margin-bottom: 21.4px;
     text-align: left;

@@ -8,9 +8,6 @@
   }
 
   .detail {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-
     ul {
       padding-left: 20px;
     }
@@ -21,6 +18,9 @@
   }
 
   .hero {
+    font-family: var(--font--serif);
+    font-weight: var(--font-weight);
+
     a {
       color: var(--heading-color);
 

@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
     const { location } = this.props
 
     return (
-      <main id="main" className="section main">
+      <main id="main" className="section main blog">
         <Head
           title='Blog'
           description="Blog index."

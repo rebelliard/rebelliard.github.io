@@ -5,8 +5,9 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-color);
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--font--sans);
   font-weight: var(--font-weight);
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -26,6 +27,22 @@ a {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font--serif);
+  font-weight: var(--font-weight);
+  letter-spacing: normal;
+}
+
+nav {
+  font-family: var(--font--serif);
+  font-weight: var(--font-weight);
+}
+
 h2,
 h3 {
   font-weight: var(--font-weight);
@@ -37,9 +54,8 @@ h2 {
 
 h3 {
   color: var(--highlight-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font--sans);
   font-size: 1em;
-  font-weight: 400;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
