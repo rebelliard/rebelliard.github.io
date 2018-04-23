@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import 'typeface-roboto-slab'
+import 'typeface-open-sans'
 import '../styles/main.scss'
 
 class Template extends React.Component {

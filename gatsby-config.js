@@ -47,15 +47,6 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Open Sans`,
-          `Roboto Slab:300,400`,
-        ]
-      }
-    }
+    `gatsby-plugin-sass`
   ],
 }
