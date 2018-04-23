@@ -54,6 +54,7 @@ const Head = props => {
       <link rel="icon" type="image/png" sizes="192x192"  href="/public/favicon/android-icon-192x192.png"/>
       <link rel="shortcut icon" href="/public/favicon/favicon.ico"/>
       <link rel="manifest" href="/public/favicon/manifest.json"/>
+      <meta name="mobile-web-app-capable" content="yes"/>
 
       <meta name="theme-color" content="#22297c"/>
       <meta name="msapplication-TileColor" content="#22297c"/>
