@@ -24,9 +24,9 @@ class BlogIndex extends React.Component {
         <article className="detail">
           <p>
             I live in the Dominican Republic and I enjoy working
-            with things like Node.js, React.js, React's new Context API,
+            with things like Node.js, React.js,
             Webpack, Gulp, GraphQL, Firebase, PostgreSQL, Jest,
-            and Serverless Framework.
+            and Serverless.
           </p>
 
           <p>
