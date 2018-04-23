@@ -1,5 +1,5 @@
 .main {
-  border: 7px solid var(--highlight-color);
+  border: 7px solid var(--color-highlight);
   box-shadow: 5px 6px 0 0 #FFF53C;
   padding: 40px;
 
@@ -18,22 +18,28 @@
   }
 
   .hero {
-    font-family: var(--font--serif);
+    font-family: var(--font-serif);
     font-weight: var(--font-weight);
 
     a {
-      color: var(--heading-color);
+      color: var(--color-heading-h1);
 
       &:hover,
       &:focus {
-        color: var(--highlight-color);
+        color: var(--color-highlight);
       }
     }
 
     p {
-      color: var(--hero-color);
+      color: var(--color-light);
       font-size: 1.15em;
       line-height: 27px;
+    }
+  }
+
+  &.index {
+    h2 {
+      color: var(--color-heading-h1);
     }
   }
 }

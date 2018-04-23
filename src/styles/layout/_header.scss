@@ -1,33 +1,33 @@
 .header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "a b b b";
+  grid-template-areas: "title nav nav nav";
   align-items: center;
   padding-bottom: 4em;
 
   .title {
-    font-family: var(--font--serif);
+    grid-area: title;
+    font-family: var(--font-serif);
     font-size: 32px;
-    grid-area: a;
     letter-spacing: normal;
     margin-top: 21.4px;
     margin-bottom: 21.4px;
     text-align: left;
 
     a {
-      color: var(--heading-color);
+      color: var(--color-heading-h1);
       font-weight: var(--font-weight);
 
       &:hover,
       &:focus {
-        color: var(--highlight-color);
+        color: var(--color-highlight);
       }
     }
   }
 
   .nav {
+    grid-area: nav;
     display: inline-block;
-    grid-area: b;
     text-align: right;
   }
 

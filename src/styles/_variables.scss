@@ -1,13 +1,14 @@
-// Using CSS variables until I migrate to SCSS' own.
+// Do I want to use SCSS variables?
 :root {
-  --font--serif: 'Roboto Slab', serif;
-  --font--sans: 'Open Sans', sans-serif;;
-  --font-weight: 300;
-  --main-bg-color: #22297c;
-  --main-color: rgba(255,255,255,0.7);
-  --link-color: #f0f1f6;
-  --hero-color: #f0f1f6;
-  --heading-color: #FFF53C;
-  --highlight-color: #00C5AF;
-  --breakpoint-xs: 400px;
+  --font-serif: 'Roboto Slab', serif;
+  --font-sans: 'Open Sans', sans-serif;
+  --font-weight: 400;
+  --color-bg: #22297c;
+  --color-text: rgba(255,255,255,0.7);
+  --color-highlight: #00C5AF;
+  --color-heading-h1: #FFF53C;
+  --color-heading-h3: var(--color-highlight);
+  --color-link: #f0f1f6;
+  --color-link--hover: var(--color-heading-h1);
+  --color-light: var(--color-link);
 }

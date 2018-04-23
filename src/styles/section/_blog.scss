@@ -1,6 +1,5 @@
 .blog {
   h1 {
-    color: var(--heading-color);
     margin-top: 0;
     margin-bottom: 1em;
   }
@@ -13,7 +12,7 @@
   time {
     font-family: 'Roboto Slab', serif;
     font-weight: var(--font-weight);
-    color: var(--highlight-color);
+    color: var(--color-highlight);
   }
 
   summary {
