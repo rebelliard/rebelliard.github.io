@@ -19,8 +19,7 @@ a {
   cursor: pointer;
 
   color: var(--link-color);
-  -webkit-text-decoration-line: none; // Safari
-  text-decoration-line: none;
+  text-decoration: none;
 
   &:hover {
     color: var(--heading-color);
@@ -102,7 +101,7 @@ pre {
     width: 330px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 414px) {
     width: 320px;
   }
 }
