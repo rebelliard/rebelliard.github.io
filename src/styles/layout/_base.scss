@@ -87,6 +87,7 @@ pre {
   // Wrap text and maintain white-space within the pre tag.
   white-space: pre-wrap;
   overflow: auto;
+  color: var(--hero-color);
 }
 
 @media screen and (max-width: 660px) {
