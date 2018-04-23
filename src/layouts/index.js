@@ -16,12 +16,16 @@ class Template extends React.Component {
       <header className="section header">
         {rootPath === location.pathname
           ? <h1 className="header-item title">
-              <Link to={'/'}>rafael.do</Link>
+              <Link
+                to={'/'}
+                aria-label="Go to the root page.">rafael.do</Link>
             </h1>
           : <div className="header-item title">
-              <Link to={'/'}>rafael.do</Link>
+              <Link
+                to={'/'}
+                aria-label="Go to the root page.">rafael.do</Link>
             </div>}
-        <nav className="header-item nav">
+        <nav className="header-item nav" role="navigation">
           <Link className="nav-item" to={'/'}>
             About
           </Link>
@@ -107,7 +111,7 @@ class Template extends React.Component {
     return (
       <footer id="footer" className="section footer">
         <h3>Find me online</h3>
-        <nav>
+        <nav role="navigation">
           <a
             className="social-icon"
             href="https://twitter.com/rebelliard"
