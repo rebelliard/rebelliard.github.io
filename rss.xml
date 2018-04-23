@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rafael.do]]></title><description><![CDATA[My personal site.]]></description><link>https://rafael.do/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Apr 2018 07:09:17 GMT</lastBuildDate><item><title><![CDATA[Fix “UNPROTECTED PRIVATE KEY FILE” on MacOS Sierra]]></title><description><![CDATA[After I upgraded from Mac OS X “El Capitan” to MacOS Sierra, I started getting the following error when trying to use my SSH keys: Somehow…]]></description><link>https://rafael.do//blog/fix-unprotected-private-key-file-on-macos/</link><guid isPermaLink="false">https://rafael.do//blog/fix-unprotected-private-key-file-on-macos/</guid><pubDate>Thu, 22 Sep 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After I upgraded from Mac OS X “El Capitan” to MacOS Sierra, I started getting the following error when trying to use my SSH keys:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rafael.do]]></title><description><![CDATA[My personal site.]]></description><link>https://rafael.do/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Apr 2018 07:15:56 GMT</lastBuildDate><item><title><![CDATA[Fix “UNPROTECTED PRIVATE KEY FILE” on MacOS Sierra]]></title><description><![CDATA[After I upgraded from Mac OS X “El Capitan” to MacOS Sierra, I started getting the following error when trying to use my SSH keys: Somehow…]]></description><link>https://rafael.do//blog/fix-unprotected-private-key-file-on-macos/</link><guid isPermaLink="false">https://rafael.do//blog/fix-unprotected-private-key-file-on-macos/</guid><pubDate>Thu, 22 Sep 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After I upgraded from Mac OS X “El Capitan” to MacOS Sierra, I started getting the following error when trying to use my SSH keys:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
@@ -277,56 +277,7 @@ Explanation:
 &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/class/archive/cs/cs161/cs161.1138/handouts/120%20Guide%20to%20Greedy%20Algorithms.pdf&quot;&gt;Guide to Greedy Algorithms&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cs.cornell.edu/courses/cs482/2004su/handouts/greedy_ahead.pdf&quot;&gt;Proof Techniques: Greedy Stays Ahead&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cs.cornell.edu/courses/cs482/2003su/handouts/greedy_exchange.pdf&quot;&gt;Proof Techniques: Greedy Exchange&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JavaScript web frameworks trends for 2016]]></title><description><![CDATA[Over the past few years, I’ve been building modern web applications using the
- AngularJS  framework.
-Despite my interest in this framework…]]></description><link>https://rafael.do//blog/javascript-web-frameworks-trends-2016/</link><guid isPermaLink="false">https://rafael.do//blog/javascript-web-frameworks-trends-2016/</guid><pubDate>Fri, 01 Jul 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Over the past few years, I’ve been building modern web applications using the
-&lt;a href=&quot;https://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt; framework.
-Despite my interest in this framework, I’ve always paid close attention to &lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt; and other less popular frameworks.
-It’s important to point out that these frameworks are not competing with each other, but rather,
-they are tackling the same problem -making the web great again- from different angles.&lt;/p&gt;
-&lt;h2&gt;A close look at the worldwide interest in client-side frameworks&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/trends/explore#cat=0-5-31&amp;#x26;q=%2Fm%2F0j45p7w%2C%20%2Fm%2F012l1vxv%2C%20%2Fm%2F0t545zt&amp;#x26;date=1%2F2014%2029m&amp;#x26;cmpt=q&amp;#x26;tz=Etc%2FGMT%2B4&quot;&gt;&lt;img src=&quot;/public/images/blog/2016-07-01/trends-worldwide.png&quot; alt=&quot;Worldwide&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;According to &lt;a href=&quot;https://www.google.com/trends/&quot;&gt;Google Trends&lt;/a&gt;, we can see
-that the interest in AngularJS is overwhelming in regards to the rest of the pack.
-I was quite surprised with these results given how over the past two years, based on
-the communities I’m a part of, I would have thought the divide was narrower.&lt;/p&gt;
-&lt;p&gt;At this point, I’m surprised that the push React receives from major applications
-such as Facebook, Netflix and Airbnb haven’t made it the top framework in terms of interest.&lt;/p&gt;
-&lt;p&gt;This also left me wondering if this trend repeated itself by region, so I changed
-the scope of my research to specific countries. Let’s find out.&lt;/p&gt;
-&lt;h3&gt;United States&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/trends/explore#cat=0-5-31&amp;#x26;q=%2Fm%2F0j45p7w%2C%20%2Fm%2F012l1vxv%2C%20%2Fm%2F0t545zt&amp;#x26;geo=US&amp;#x26;date=1%2F2014%2029m&amp;#x26;cmpt=q&amp;#x26;tz=Etc%2FGMT%2B4&quot;&gt;&lt;img src=&quot;/public/images/blog/2016-07-01/trends-us.png&quot; alt=&quot;United States&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The worldwide trend is very representative of the interest within the United States.
-If anything, we can see a slight bump in attention to both React and MeteorJS.&lt;/p&gt;
-&lt;h3&gt;United Kingdom&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/trends/explore#cat=0-5-31&amp;#x26;q=%2Fm%2F0j45p7w%2C%20%2Fm%2F012l1vxv%2C%20%2Fm%2F0t545zt&amp;#x26;geo=GB&amp;#x26;date=1%2F2014%2029m&amp;#x26;cmpt=q&amp;#x26;tz=Etc%2FGMT%2B4&quot;&gt;&lt;img src=&quot;/public/images/blog/2016-07-01/trends-uk.png&quot; alt=&quot;United Kingdom&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Europe presents similar trends to those previously seen, albeit React shows
-a less linear increase than the United States. Let’s take a look at Asia.&lt;/p&gt;
-&lt;h3&gt;Japan&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/trends/explore#cat=0-5-31&amp;#x26;q=%2Fm%2F0j45p7w%2C%20%2Fm%2F012l1vxv%2C%20%2Fm%2F0t545zt&amp;#x26;geo=JP&amp;#x26;date=1%2F2014%2029m&amp;#x26;cmpt=q&amp;#x26;tz=Etc%2FGMT%2B4&quot;&gt;&lt;img src=&quot;/public/images/blog/2016-07-01/trends-jp.png&quot; alt=&quot;Japan&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Whoa, React has really taken off in the asian market. Even though AngularJS is still
-the most looked into framework of the two, the difference is much less dramatic than
-in America and Europe, to the point where on April of 2016, they were pretty much neck and neck!&lt;/p&gt;
-&lt;p&gt;Around this time, it’s clear that AngularJS got catapulted again when &lt;a href=&quot;https://www.sitepoint.com/whats-new-in-angularjs-2/&quot;&gt;version 2.0&lt;/a&gt;
-started to show &lt;a href=&quot;http://thenewstack.io/google-preps-angular-2-final-release/&quot;&gt;signs of maturity&lt;/a&gt;,
-but despite React not having a similar overhaul, it’s been creeping in at a steady pace.&lt;/p&gt;
-&lt;h3&gt;China&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/trends/explore#cat=0-5-31&amp;#x26;q=%2Fm%2F0j45p7w%2C%20%2Fm%2F012l1vxv%2C%20%2Fm%2F0t545zt&amp;#x26;geo=CN&amp;#x26;date=1%2F2014%2029m&amp;#x26;cmpt=q&amp;#x26;tz=Etc%2FGMT%2B4&quot;&gt;&lt;img src=&quot;/public/images/blog/2016-07-01/trends-cn.png&quot; alt=&quot;Japan&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Well, hello React a.k.a. Mr. Top Dog. Although the difference is less greater than other regions,
-the trend clearly shows that React isn’t slowing down anytime soon. Why is React that much popular
-in Asia? I’m pleasantly surprised.&lt;/p&gt;
-&lt;h2&gt;What does this mean?&lt;/h2&gt;
-&lt;p&gt;Regardless of what your preference is, one thing is certain:
-the software development world has embraced client-side frameworks. If you plan on
-building applications with a rich user experience for the very demanding users we now have,
-you better start learning one of these major frameworks.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://angular.io/docs/ts/latest/guide/&quot;&gt;AngularJS&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/docs/getting-started.html&quot;&gt;ReactJS&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://guide.meteor.com/&quot;&gt;MeteorJS&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They all have different scopes, so make sure you take a look at all of them
-before making your decision!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How do I become a better developer?]]></title><link>https://rafael.do//blog/how-do-i-become-a-better-developer/</link><guid isPermaLink="false">https://rafael.do//blog/how-do-i-become-a-better-developer/</guid><pubDate>Tue, 14 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How do I become a better developer?]]></title><link>https://rafael.do//blog/how-do-i-become-a-better-developer/</link><guid isPermaLink="false">https://rafael.do//blog/how-do-i-become-a-better-developer/</guid><pubDate>Tue, 14 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;
   &lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;#1 answer to &quot;how do I become a better developer?&quot; start a blog. You&apos;ll learn so much + have a reference to all you know, in your own words.&lt;/p&gt;&amp;mdash;
   Todd Motto (@toddmotto) &lt;a href=&quot;https://twitter.com/toddmotto/status/737766510387662848&quot;&gt;May 31, 2016&lt;/a&gt;
 &lt;/blockquote&gt;
