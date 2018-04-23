@@ -22,7 +22,8 @@ a {
   color: var(--link-color);
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--heading-color);
   }
 }

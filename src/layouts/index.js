@@ -22,7 +22,7 @@ class Template extends React.Component {
               <Link to={'/'}>rafael.do</Link>
             </div>}
         <nav className="header-item nav">
-          <Link className="nav-item" to={'/about/'}>
+          <Link className="nav-item" to={'/'}>
             About
           </Link>
           <Link className="nav-item" to={'/blog/'}>

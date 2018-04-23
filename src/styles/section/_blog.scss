@@ -15,6 +15,13 @@
   }
 
   article {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 660px) {
+    article {
+      margin-bottom: 20px;
+    }
   }
 }
+

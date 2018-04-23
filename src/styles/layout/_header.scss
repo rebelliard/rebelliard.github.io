@@ -18,7 +18,8 @@
       color: var(--heading-color);
       font-weight: var(--font-weight);
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--highlight-color);
       }
     }
