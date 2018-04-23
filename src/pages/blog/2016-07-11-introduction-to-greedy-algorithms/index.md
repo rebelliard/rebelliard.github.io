@@ -9,7 +9,7 @@ teaser: "Greedy algorithms are good at finding solutions to problems by choosing
 tags: ['algorithms']
 ---
 
-{{ page.teaser }}
+Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step.
 
 ## Basic concepts
 
