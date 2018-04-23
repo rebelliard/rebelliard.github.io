@@ -5,16 +5,17 @@ import Head from '../../components/Head'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const title = 'Blog'
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const { location } = this.props
 
     return (
       <main id="main" className="section main blog">
         <Head
-          title='Blog'
+          title={title}
           description="Blog index."
           location={location}/>
+        <h1>{title}</h1>
         {posts
           .filter(post => !get(post, 'node.frontmatter.disableListing'))
           .map(({ node }) => {
@@ -54,7 +55,6 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             permalink
-            disableListing
           }
         }
       }
