@@ -6,6 +6,12 @@ import Head from '../components/Head'
 class BlogIndex extends React.Component {
   state = {}
 
+  componentDidMount() {
+    this.setState({
+      showDetails: window.location.hash === '#more',
+    })
+  }
+
   toggleDetails = e => {
     e.preventDefault()
 
@@ -20,8 +26,8 @@ class BlogIndex extends React.Component {
     }
 
     return (
-      <div>
-        <article className="detail">
+      <React.Fragment>
+        <article id="more" className="detail">
           <p>
             I live in the Dominican Republic and I enjoy working
             with things like Node.js, React.js,
@@ -78,7 +84,7 @@ class BlogIndex extends React.Component {
                 href="mailto:me@rafael.do">drop me a line</a>!
           </p>
         </article>
-      </div>
+      </React.Fragment>
     )
   }
 
@@ -102,7 +108,7 @@ class BlogIndex extends React.Component {
             frontend code, APIs and databases.{' '}
             {this.state.showDetails
               ? null
-              : <a onClick={this.toggleDetails}>More about me.</a>
+              : <a href="#more" onClick={this.toggleDetails}>More about me.</a>
             }
           </p>
         </article>
