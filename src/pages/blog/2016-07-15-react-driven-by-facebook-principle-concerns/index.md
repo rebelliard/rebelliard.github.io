@@ -41,7 +41,9 @@ I found the phrasing in this statement odd, as it can be implied that the reason
 
 > Ultimately React is driven by the needs of Facebook. We are more likely to spend time and energy on issues with React that people using it at Facebook are experiencing internally.
 
-![Lower your expectations](/public/images/blog/2016-07-15/lower-your-expectations.gif)
+<video autoplay loop muted playsinline>
+  <source src="/public/images/blog/2016-07-15/lower-your-expectations.mp4" type="video/mp4"/>
+</video>
 
 It makes sense that attention is given to ensure their platform provides a pleasant experience to its gigantic user base, while rolling out tools that benefit the rest of the world. However, I was immediately reminded of how shocking it was when they decided to shutdown it's fantastic “Parse” backend as a service platform and leave a myriad of businesses scrambling for their lives. As [TechChrunch.com](https://techcrunch.com/2016/01/28/facebook-shutters-its-parse-developer-platform/) remarked:
 
@@ -49,7 +51,7 @@ It makes sense that attention is given to ensure their platform provides a pleas
 
 ## Let's ride the wave
 
-Am I concerned that Facebook will “move my cheese”? I'm not. React is a wonderful library with a [growing user base](javascript-web-frameworks-trends-2016) and I'm invested in it more so than any other out there.
+Am I concerned that Facebook will “move my cheese”? I'm not. React is a wonderful library with a growing user base and I'm invested in it more so than any other out there.
 
 In spite of this, when I remember the company's cutthroat history, I read between the lines and understand that that if React's direction suddenly misaligns with that of the community's, we played ourselves.
 
