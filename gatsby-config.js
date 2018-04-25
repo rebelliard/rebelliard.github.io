@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'rafael.do',
-    author: 'Rafael E. Belliard',
+    title: 'Rafael Belliard, software developer',
+    author: 'Rafael Belliard',
     description: 'My personal site.',
     siteUrl: 'https://rafael.do/',
   },
