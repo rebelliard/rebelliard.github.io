@@ -20,4 +20,21 @@
   img {
     max-width: 100%;
   }
+
+  blockquote:not(.twitter-tweet) {
+    color: var(--color-highlight);
+    quotes: "“" "”" "‘" "’";
+
+    &:before {
+      content: open-quote;
+    }
+
+    &:after {
+      content: close-quote;
+    }
+
+    p {
+      display: inline;
+    }
+  }
 }
