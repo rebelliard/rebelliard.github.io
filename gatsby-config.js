@@ -45,8 +45,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
+    {
+      /**
+       * Fix: twitter widget rendering is inconsistent.
+       * @see https://github.com/gatsbyjs/gatsby/issues/1625#issuecomment-364644428
+       */
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        navigateFallback: null,
+        navigateFallbackWhitelist: [],
+      }
+    },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-twitter`
   ],
 }

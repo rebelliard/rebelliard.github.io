@@ -9,8 +9,6 @@ teaser:      "Clarification of my concerns about React's “Design Principles”
 tags: ['react']
 ---
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 Yesterday, I shared [how concerned](react-driven-by-facebook-principle-concerns) I was with React's
 [Design Principles](https://facebook.github.io/react/contributing/design-principles.html).
 Today, I'd like to share the response I received from [@dan_abramov](https://twitter.com/dan_abramov)

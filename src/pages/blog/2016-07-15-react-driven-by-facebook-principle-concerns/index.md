@@ -23,7 +23,6 @@ tags: ['react']
 Facebook just released [React Design Principles](https://facebook.github.io/react/contributing/design-principles.html), an article in which they share a few concepts that guide the library's development. I was feeling assured by the decision-making that drives it, until I was reminded to always keep my chin down and my guard up.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hot off the press: React Design Principles. We hope that contributors to React will find them useful! <a href="https://t.co/93wr0tAXSZ">https://t.co/93wr0tAXSZ</a></p>&mdash; React (@reactjs) <a href="https://twitter.com/reactjs/status/753677502309072897">July 14, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## The good
 
@@ -53,4 +52,4 @@ In spite of this, when I remember the company's cutthroat history, I read betwee
 
 As George Orwell famously wrote on [“Animal Farm”](https://www.amazon.com/Animal-Farm-Anniversary-George-Orwell/dp/0451526341/):
 
-> "All animals are equal but some animals are more equal than others".
+> All animals are equal but some animals are more equal than others.

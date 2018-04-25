@@ -13,4 +13,3 @@ tags: ['growth']
   <p lang="en" dir="ltr">#1 answer to "how do I become a better developer?" start a blog. You'll learn so much + have a reference to all you know, in your own words.</p>&mdash;
   Todd Motto (@toddmotto) <a href="https://twitter.com/toddmotto/status/737766510387662848">May 31, 2016</a>
 </blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
