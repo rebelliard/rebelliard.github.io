@@ -58,6 +58,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        teaser
+        description
         date(formatString: "MMMM DD, YYYY")
         permalink
       }
