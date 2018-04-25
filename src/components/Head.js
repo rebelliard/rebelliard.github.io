@@ -60,6 +60,8 @@ const Head = props => {
       <meta name="msapplication-TileColor" content="#22297c"/>
       <meta name="msapplication-TileImage" content={`${domain}/public/favicon/ms-icon-144x144.png`}/>
       <meta name="msapplication-config" content="/public/favicon/browserconfig.xml"/>
+
+      <meta name="google-site-verification" content="8wOUpHuPjtENukcgJPOptzz1IwTynlJtIl__TUXdTAQ"/>
     </Helmet>
   )
 }
