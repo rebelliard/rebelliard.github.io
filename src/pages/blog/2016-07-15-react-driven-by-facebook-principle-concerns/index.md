@@ -41,10 +41,6 @@ I found the phrasing in this statement odd, as it can be implied that the reason
 
 > Ultimately React is driven by the needs of Facebook. We are more likely to spend time and energy on issues with React that people using it at Facebook are experiencing internally.
 
-<video autoplay loop muted playsinline>
-  <source src="/public/images/blog/2016-07-15/lower-your-expectations.mp4" type="video/mp4"/>
-</video>
-
 It makes sense that attention is given to ensure their platform provides a pleasant experience to its gigantic user base, while rolling out tools that benefit the rest of the world. However, I was immediately reminded of how shocking it was when they decided to shutdown it's fantastic “Parse” backend as a service platform and leave a myriad of businesses scrambling for their lives. As [TechChrunch.com](https://techcrunch.com/2016/01/28/facebook-shutters-its-parse-developer-platform/) remarked:
 
 > The situation harkens back to the dark days of developer whiplash on Facebook’s web games platform, circa 2009. Facebook frequently made significant changes to what developers could do and how virality worked with little notice. That left developers with broken apps and lost business potential they were depending on.
