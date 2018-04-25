@@ -19,12 +19,12 @@ a {
   // @see https://stackoverflow.com/a/27525707
   cursor: pointer;
 
-  color: var(--color-link--hover);
+  color: var(--color-link);
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: var(--color-link);
+    color: var(--color-link--hover);
   }
 }
 

@@ -4,22 +4,6 @@
     margin-bottom: 6px;
   }
 
-  article {
-    a {
-      // React Click events not firing on mobile
-      // @see https://stackoverflow.com/a/27525707
-      cursor: pointer;
-
-      color: var(--color-link);
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: var(--color-link--hover);
-      }
-    }
-  }
-
   .divider {
     margin-top: 3em;
   }
@@ -30,6 +14,15 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
+
+    a {
+      color: var(--color-highlight);
+
+      &:hover,
+      &:focus {
+        color: var(--color-light);
+      }
+    }
   }
 
   video,
