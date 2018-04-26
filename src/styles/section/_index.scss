@@ -25,7 +25,8 @@
       color: var(--color-heading-h1);
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: var(--color-highlight);
       }
     }

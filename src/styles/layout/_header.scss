@@ -19,7 +19,8 @@
       font-weight: var(--font-weight);
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: var(--color-highlight);
       }
     }

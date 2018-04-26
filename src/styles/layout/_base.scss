@@ -23,7 +23,8 @@ a {
   text-decoration: none;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: var(--color-link--hover);
   }
 }
