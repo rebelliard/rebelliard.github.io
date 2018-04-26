@@ -30,7 +30,7 @@ I hope this helps anyone who felt as conflicted as I did.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/rebelliard">@rebelliard</a> I wrote a comment</p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/754285961845022720">July 16, 2016</a></blockquote>
 
-* The comment can be read [here](react-driven-by-facebook-principle-concerns#comment-2786435370).
+* The comment can be read [here](https://disqus.com/home/discussion/rebelliard/reacts_driven_by_facebook_principle_concerns/#comment-2786435370).
   It's good stuff.
 
 ## About Parse
