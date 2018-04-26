@@ -6,6 +6,7 @@ const Head = props => {
   const domain = 'https://rafael.do'
 
   const image = {
+    page: props.image ? `${domain}/public/images/blog/${props.image}` : undefined,
     avatar: `${domain}/public/images/blog/avatar.jpg`
   }
 
@@ -41,13 +42,8 @@ const Head = props => {
       <meta name="twitter:description" content={props.description}/>
       <meta property="og:description" content={props.description}/>
 
-      {props.image
-        ? <meta name="og:image" content={image.avatar}/>
-        : <meta name="og:image" content={props.image}/>}
-
-      {props.image
-        ? <meta name="twitter:image:src" content={image.avatar}/>
-        : <meta name="twitter:image:src" content={props.image}/>}
+      <meta name="og:image" content={image.page || image.avatar}/>
+      <meta name="twitter:image:src" content={image.page || image.avatar}/>
 
       <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-icon-180x180.png"/>
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon/apple-icon-144x144.png"/>

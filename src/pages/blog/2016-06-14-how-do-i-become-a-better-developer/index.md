@@ -7,6 +7,7 @@ redirectFrom: ["/how-do-i-become-a-better-developer/"]
 description: "How I can break away from my plateau and improve my coding skills?"
 teaser: 'Start a blog.'
 tags: ['growth']
+image: ''
 ---
 
 <blockquote class="twitter-tweet" data-lang="en">

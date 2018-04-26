@@ -6,8 +6,8 @@ date_modified: '2016-07-16'
 permalink: "/blog/react-driven-by-facebook-principle-concerns/"
 description: "React's “Design Principles” article gave me a rollercoaster of emotions that reminded me of Facebook's ill-fated Parse service."
 teaser: "React's “Design Principles” article gave me a rollercoaster of emotions that reminded me of Facebook's ill-fated Parse service."
-#image: ./images/react-logo.png
 tags: ['react']
+image: '2016-07-15/react-logo.png'
 ---
 
 <blockquote class="bg-warning">

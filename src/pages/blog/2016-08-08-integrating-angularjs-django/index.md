@@ -6,7 +6,7 @@ permalink: "/blog/integrating-angularjs-django/"
 description: "How to create a single-page application using AngularJS and the Django Framework."
 teaser:      "How to create a single-page application using AngularJS and the Django Framework."
 tags: ['angularjs']
-#image: ./images/django-logo-negative.png
+image: '2016-08-08/django-logo-negative.png'
 ---
 
 In 3 steps, you can easily setup a single-page application with an [AngularJS](https://angularjs.org/) frontend and backed by the [Django Framework](https://www.djangoproject.com/):

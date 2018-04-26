@@ -5,8 +5,8 @@ date: '2016-07-16'
 permalink: "/blog/response-to-react-design-principles-interpretation-by-react-members/"
 description: "Clarification of my concerns about React's “Design Principles” by members of the React team."
 teaser:      "Clarification of my concerns about React's “Design Principles” by members of the React team."
-#image: ./images/react-logo-reload.png
 tags: ['react']
+image: '2016-07-16/react-logo-reload.png'
 ---
 
 Yesterday, I shared [how concerned](react-driven-by-facebook-principle-concerns) I was with React's

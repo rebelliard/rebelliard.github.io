@@ -9,12 +9,12 @@ class BlogPostTemplate extends React.Component {
     const { location } = this.props
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
-
     return (
       <main id="main" className="section main blog blogpost">
         <Head
           title={post.frontmatter.title || siteTitle}
           description={post.frontmatter.description}
+          image={post.frontmatter.image}
           location={location}/>
         <h1>{post.frontmatter.title}</h1>
         <time itemProp="datePublished">{post.frontmatter.date}</time>
@@ -60,6 +60,7 @@ export const pageQuery = graphql`
         title
         teaser
         description
+        image
         date(formatString: "MMMM DD, YYYY")
         permalink
       }

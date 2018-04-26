@@ -5,8 +5,8 @@ date: '2016-07-11'
 permalink: "/blog/introduction-greedy-algorithms/"
 description: "Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step."
 teaser: "Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step."
-#image: ./images/mr-burns.jpg
 tags: ['algorithms']
+image: '2016-07-11/mr-burns.jpg'
 ---
 
 Greedy algorithms are good at finding solutions to problems by choosing a consistently optimal solution on each step.

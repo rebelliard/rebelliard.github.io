@@ -23,6 +23,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     teaser
                     description
                     tags
+                    image
                     redirectFrom
                   }
                 }
