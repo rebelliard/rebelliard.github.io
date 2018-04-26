@@ -26,10 +26,14 @@ class Template extends React.Component {
                 aria-label="Go to the root page.">rafael.do</Link>
             </div>}
         <nav className="header-item nav" role="navigation">
-          <Link className="nav-item" to={'/'}>
+          <Link
+            className={`nav-item${location.pathname === rootPath ? ' active' : ''}`}
+            to={'/'}>
             About
           </Link>
-          <Link className="nav-item" to={'/blog/'}>
+          <Link
+            className={`nav-item${location.pathname.includes('/blog/') ? ' active' : ''}`}
+            to={'/blog/'}>
             Blog
           </Link>
           <a className="nav-item" href="mailto:me@rafael.do">

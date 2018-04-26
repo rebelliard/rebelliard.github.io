@@ -33,6 +33,17 @@
 
   .nav-item {
     margin-left: 2em;
+
+    &.active {
+      border-bottom: 2.5px solid;
+      border-image: linear-gradient(to right,  var(--color-highlight) 20%, var(--color-heading-h1)) 5;
+      background-blend-mode: multiply;
+      padding-bottom: 3px;
+    }
+
+    &:focus {
+      color: var(--color-link);
+    }
   }
 
   .header-item {
