@@ -36,11 +36,11 @@
     margin-left: 2em;
 
     &.active {
-      border-bottom: 2.5px solid;
+      border-bottom: 2px solid;
       border-image: linear-gradient(to right,  $color-highlight 10%, $color-heading-h1) 5;
       // Safari: We need to specify where to border,
       // or else, a square will border the element.
-      border-image-width: 0 0 2.5px 0;
+      border-image-width: 0 0 2px 0;
       padding-bottom: 3px;
     }
 
