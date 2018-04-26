@@ -3,10 +3,10 @@
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight);
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-sans;
+  font-weight: $font-weight;
   letter-spacing: 0.5px;
 }
 
@@ -19,13 +19,13 @@ a {
   // @see https://stackoverflow.com/a/27525707
   cursor: pointer;
 
-  color: var(--color-link);
+  color: $color-link;
   text-decoration: none;
 
   &:hover,
   &:focus,
   &:active {
-    color: var(--color-link--hover);
+    color: $color-link--hover;
   }
 }
 
@@ -35,29 +35,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif);
-  font-weight: var(--font-weight);
+  font-family: $font-serif;
+  font-weight: $font-weight;
   letter-spacing: normal;
 }
 
 nav {
-  font-family: var(--font-serif);
-  font-weight: var(--font-weight);
+  font-family: $font-serif;
+  font-weight: $font-weight;
 }
 
 h1,
 h2 {
-  color: var(--color-heading-h1);
+  color: $color-heading-h1;
 }
 
 h2,
 h3 {
-  font-weight: var(--font-weight);
+  font-weight: $font-weight;
 }
 
 h3 {
-  color: var(--color-highlight);
-  font-family: var(--font-sans);
+  color: $color-highlight;
+  font-family: $font-sans;
   font-size: 1em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ pre {
   // Wrap text and maintain white-space within the pre tag.
   white-space: pre-wrap;
   overflow: auto;
-  color: var(--color-light);
+  color: $color-light;
 }
 
 @media screen and (max-width: 660px) {

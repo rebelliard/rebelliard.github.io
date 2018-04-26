@@ -22,7 +22,7 @@
   }
 
   blockquote {
-    color: var(--color-highlight);
+    color: $color-highlight;
     quotes: "“" "”" "‘" "’";
 
     &:before {

@@ -1,5 +1,5 @@
 .main {
-  border: 7px solid var(--color-highlight);
+  border: 7px solid $color-highlight;
   box-shadow: 5px 6px 0 0 #FFF53C;
   padding: 40px;
 
@@ -18,21 +18,21 @@
   }
 
   .hero {
-    font-family: var(--font-serif);
-    font-weight: var(--font-weight);
+    font-family: $font-serif;
+    font-weight: $font-weight;
 
     a {
-      color: var(--color-heading-h1);
+      color: $color-heading-h1;
 
       &:hover,
       &:focus,
       &:active {
-        color: var(--color-highlight);
+        color: $color-highlight;
       }
     }
 
     p {
-      color: var(--color-light);
+      color: $color-light;
       font-size: 1.15em;
       line-height: 27px;
     }
@@ -40,12 +40,12 @@
 
   &.index {
     h2 {
-      color: var(--color-heading-h1);
+      color: $color-heading-h1;
     }
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $padding-max-width-sm) {
   .main {
     padding: 15px;
   }

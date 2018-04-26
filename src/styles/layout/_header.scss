@@ -7,7 +7,7 @@
 
   .title {
     grid-area: title;
-    font-family: var(--font-serif);
+    font-family: $font-serif;
     font-size: 32px;
     letter-spacing: normal;
     margin-top: 21.4px;
@@ -15,13 +15,13 @@
     text-align: left;
 
     a {
-      color: var(--color-heading-h1);
-      font-weight: var(--font-weight);
+      color: $color-heading-h1;
+      font-weight: $font-weight;
 
       &:hover,
       &:focus,
       &:active {
-        color: var(--color-highlight);
+        color: $color-highlight;
       }
     }
   }
@@ -37,7 +37,7 @@
 
     &.active {
       border-bottom: 2.5px solid;
-      border-image: linear-gradient(to right,  var(--color-highlight) 10%, var(--color-heading-h1)) 5;
+      border-image: linear-gradient(to right,  $color-highlight 10%, $color-heading-h1) 5;
       // Safari: We need to specify where to border,
       // or else, a square will border the element.
       border-image-width: 0 0 2.5px 0;
@@ -45,7 +45,7 @@
     }
 
     &:focus {
-      color: var(--color-link);
+      color: $color-link;
     }
   }
 
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $padding-max-width-sm) {
   .header {
     padding-bottom: 2em;
 
@@ -64,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: $padding-max-width-xs) {
   .header {
     padding-bottom: 0.7em;
   }

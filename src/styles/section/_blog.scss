@@ -11,8 +11,8 @@
 
   time {
     font-family: 'Roboto Slab', serif;
-    font-weight: var(--font-weight);
-    color: var(--color-highlight);
+    font-weight: $font-weight;
+    color: $color-highlight;
   }
 
   summary {

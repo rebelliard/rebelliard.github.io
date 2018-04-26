@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $padding-max-width-sm) {
   .footer {
     padding-top: 2em;
     padding-bottom: 1.2em;
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: $padding-max-width-xs) {
   .footer {
     padding-top: 0.7em;
     padding-bottom: 0.3em;
