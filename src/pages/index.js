@@ -96,7 +96,7 @@ class BlogIndex extends React.Component {
       <main id="main" className="section main index">
         <Head
           title={siteTitle}
-          description="Personal website of Rafael Belliard."
+          description="Personal website."
           location={location}/>
         <article className="hero">
           <h2>
