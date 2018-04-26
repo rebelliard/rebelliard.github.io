@@ -37,12 +37,6 @@
       line-height: 27px;
     }
   }
-
-  &.index {
-    h2 {
-      color: $color-heading-h1;
-    }
-  }
 }
 
 @media screen and (max-width: $padding-max-width-sm) {
