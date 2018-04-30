@@ -1,9 +1,42 @@
 import React from 'react'
 import Head from '../components/Head'
 import Link from 'gatsby-link'
+import { navigateTo } from "gatsby-link"
 import get from 'lodash/get'
 
 class BlogPostTemplate extends React.Component {
+
+  handleKeyDown = (e) => {
+    const { location } = this.props
+    const { previous, next } = this.props.pathContext
+
+    const keystate = {
+      'ArrowLeft': () => {
+        if (previous) {
+          navigateTo(previous.fields.slug)
+        }
+      },
+      'ArrowRight': () => {
+        if (next) {
+          navigateTo(next.fields.slug)
+        }
+      }
+    }
+
+    const key = String(e.key)
+    if (keystate.hasOwnProperty(key)) {
+      keystate[key]();
+    }
+  }
+
+  componentWillMount(){
+    document.addEventListener('keydown', this.handleKeyDown)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown)
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const { location } = this.props
@@ -20,23 +53,28 @@ class BlogPostTemplate extends React.Component {
         <time itemProp="datePublished">{post.frontmatter.date}</time>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <hr className="divider"/>
         <ul className="siblings">
-          {previous && (
             <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              {previous && (
+                <Link
+                  to={previous.fields.slug}
+                  rel="prev"
+                  title={previous.frontmatter.title}
+                  aria-label={previous.frontmatter.title}
+                  className="previous"></Link>
+              )}
             </li>
-          )}
 
-          {next && (
             <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              {next && (
+                <Link
+                  to={next.fields.slug}
+                  rel="next"
+                  title={next.frontmatter.title}
+                  aria-label={next.frontmatter.title}
+                  className="next"></Link>
+              )}
             </li>
-          )}
         </ul>
       </main>
     )
