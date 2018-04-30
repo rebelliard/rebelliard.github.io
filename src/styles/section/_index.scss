@@ -39,6 +39,21 @@
   }
 }
 
+p {
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1.5px solid;
+      border-image: linear-gradient(to right,  $color-highlight 10%, $color-heading-h1) 5;
+      // Safari: We need to specify where to border,
+      // or else, a square will border the element.
+      border-image-width: 0 0 1.5px 0;
+      padding-bottom: 2px;
+    }
+  }
+}
+
 @media screen and (max-width: $padding-max-width-sm) {
   .main {
     padding: 15px;
