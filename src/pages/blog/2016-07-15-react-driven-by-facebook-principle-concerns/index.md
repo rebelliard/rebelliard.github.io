@@ -13,7 +13,7 @@ image: '2016-07-15/react-logo.png'
 <blockquote class="bg-warning">
   <p>
     <b>Update:</b>
-    I've posted an <a href="response-to-react-design-principles-interpretation-by-react-members">update</a>
+    I've posted an <a href="/response-to-react-design-principles-interpretation-by-react-members">update</a>
     based on the response I received from <a href="https://twitter.com/dan_abramov">a member</a>
     of the React team. Also, make sure you read his commment <a href="#comment-2786435370">below</a>.
     (2016-07-16)
