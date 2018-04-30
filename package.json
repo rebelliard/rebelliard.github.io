@@ -53,7 +53,8 @@
     "format": "prettier --no-semi --single-quote --write --print-width 100 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "clean": "rm -rf public/* && cp CNAME public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master && yarn clean",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
