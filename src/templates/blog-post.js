@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../components/Head'
 import Link from 'gatsby-link'
-import { navigateTo } from "gatsby-link"
+import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
 
 class BlogPostTemplate extends React.Component {
