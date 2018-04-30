@@ -45,9 +45,15 @@ class Template extends React.Component {
   }
 
   Footer = () => {
+    /**
+     * Trim whitespace.
+     * @see https://stackoverflow.com/a/12014464
+     */
+    const trim = str => str.replace(/>\s+</g, '><').trim()
+
     const svg = {
       linkedin: {
-        __html: `
+        __html: trim(`
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>LinkedIn</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -60,10 +66,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `
+        `)
       },
       github: {
-        __html: `
+        __html: trim(`
           <svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>GitHub</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -76,10 +82,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `
+        `)
       },
       twitter: {
-        __html: `
+        __html: trim(`
           <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Twitter</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,10 +98,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `
+        `)
       },
       lastfm: {
-        __html: `
+        __html: trim(`
           <svg width="25px" height="14px" viewBox="0 0 25 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Last.fm</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -108,7 +114,7 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `
+        `)
       }
     }
 
