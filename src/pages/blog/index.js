@@ -1,9 +1,28 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { navigateTo } from 'gatsby-link'
 import Head from '../../components/Head'
 
 class BlogIndex extends React.Component {
+  handleKeyDown = (e) => {
+    if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
+      navigateTo('/')
+    }
+  }
+
+  componentWillMount(){
+    if (typeof document !== 'undefined') {
+      document.addEventListener('keydown', this.handleKeyDown)
+    }
+  }
+
+  componentWillUnmount() {
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('keydown', this.handleKeyDown)
+    }
+  }
+
   render() {
     const title = 'Blog'
     const posts = get(this, 'props.data.allMarkdownRemark.edges')

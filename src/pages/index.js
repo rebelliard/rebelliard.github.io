@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { navigateTo } from 'gatsby-link'
 import Head from '../components/Head'
 
 class BlogIndex extends React.Component {
@@ -10,6 +11,24 @@ class BlogIndex extends React.Component {
     this.setState({
       showDetails: window.location.hash === '#more',
     })
+  }
+
+  handleKeyDown = (e) => {
+    if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
+      navigateTo('/blog/')
+    }
+  }
+
+  componentWillMount(){
+    if (typeof document !== 'undefined') {
+      document.addEventListener('keydown', this.handleKeyDown)
+    }
+  }
+
+  componentWillUnmount() {
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('keydown', this.handleKeyDown)
+    }
   }
 
   toggleDetails = e => {
