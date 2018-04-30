@@ -35,6 +35,7 @@
   .nav-item {
     margin-left: 2em;
 
+    &:hover,
     &.active {
       border-bottom: 2px solid;
       border-image: linear-gradient(to right,  $color-highlight 10%, $color-heading-h1) 5;
