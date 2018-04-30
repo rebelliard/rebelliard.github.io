@@ -52,7 +52,9 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title || siteTitle}
           description={post.frontmatter.description}
           image={post.frontmatter.image}
-          location={location}/>
+          location={location}
+          previous={get(previous, 'fields.slug')}
+          next={get(next, 'fields.slug')}/>
         <h1>{post.frontmatter.title}</h1>
         <time itemProp="datePublished">{post.frontmatter.date}</time>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />

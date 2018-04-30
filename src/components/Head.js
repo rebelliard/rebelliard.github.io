@@ -58,6 +58,9 @@ const Head = props => {
       <meta name="msapplication-config" content="/public/favicon/browserconfig.xml"/>
 
       <meta name="google-site-verification" content="8wOUpHuPjtENukcgJPOptzz1IwTynlJtIl__TUXdTAQ"/>
+
+      {props.previous ? <link rel="prev" href={`${this.domain}${props.previous}`}/> : undefined}
+      {props.next ? <link rel="next" href={`${this.domain}${props.next}`}/> : undefined}
     </Helmet>
   )
 }
