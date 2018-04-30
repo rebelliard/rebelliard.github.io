@@ -9,7 +9,7 @@ tags: ['react']
 image: '2016-07-16/react-logo-reload.png'
 ---
 
-Yesterday, I shared [how concerned](react-driven-by-facebook-principle-concerns) I was with React's
+Yesterday, I shared [how concerned](/blog/react-driven-by-facebook-principle-concerns) I was with React's
 [Design Principles](https://facebook.github.io/react/contributing/design-principles.html).
 Today, I'd like to share the response I received from [@dan_abramov](https://twitter.com/dan_abramov)
 —a member of the React team— regarding my interpretation of these principles.
