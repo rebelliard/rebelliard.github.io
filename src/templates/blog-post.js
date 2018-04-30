@@ -30,11 +30,15 @@ class BlogPostTemplate extends React.Component {
   }
 
   componentWillMount(){
-    document.addEventListener('keydown', this.handleKeyDown)
+    if (typeof document !== 'undefined') {
+      document.addEventListener('keydown', this.handleKeyDown)
+    }
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleKeyDown)
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('keydown', this.handleKeyDown)
+    }
   }
 
   render() {
