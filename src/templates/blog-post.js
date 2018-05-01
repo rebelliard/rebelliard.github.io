@@ -23,9 +23,8 @@ class BlogPostTemplate extends React.Component {
       }
     }
 
-    const key = String(e.key)
-    if (keystate.hasOwnProperty(key)) {
-      keystate[key]();
+    if (keystate.hasOwnProperty(e.key)) {
+      keystate[e.key]();
     }
   }
 
