@@ -39,7 +39,11 @@ class BlogPostTemplate extends React.Component {
     }
   }
 
-  render() {
+  /**
+   * @param {{event:Event}} x
+   */
+  render(x) {
+    x.event.target.value
     const post = this.props.data.markdownRemark
     const { location } = this.props
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
@@ -50,6 +54,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title || siteTitle}
           description={post.frontmatter.description}
           image={post.frontmatter.image}
+          tags={post.frontmatter.tags}
           location={location}
           previous={get(previous, 'fields.slug')}
           next={get(next, 'fields.slug')}/>
