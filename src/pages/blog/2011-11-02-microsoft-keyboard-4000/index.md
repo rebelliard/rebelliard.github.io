@@ -4,7 +4,7 @@ title: "Microsoft Natural Ergonomic Keyboard 4000's zoom slider on Ubuntu 12.10"
 date: '2011-11-02'
 permalink: "/blog/enabling-scrolling-using-the-microsoft-natural-ergonomic-keyboard-4000s-zoom-slider-on-ubuntu-1210/"
 description: "Enabling scrolling using the Microsoft Natural Ergonomic Keyboard 4000's zoom slider on Ubuntu 12.10"
-tags: ['setup']
+tags: ['Setup', 'Linux']
 image: '2011-11-02/microsoft-keyboard-4000.jpg'
 ---
 

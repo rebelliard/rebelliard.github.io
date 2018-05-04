@@ -5,7 +5,7 @@ date: '2016-08-08'
 permalink: "/blog/integrating-angularjs-django/"
 description: "How to create a single-page application using AngularJS and the Django Framework."
 teaser:      "How to create a single-page application using AngularJS and the Django Framework."
-tags: ['angularjs']
+tags: ['Angular']
 image: '2016-08-08/django-logo-negative.png'
 ---
 
