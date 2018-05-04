@@ -1,8 +1,7 @@
-import React from 'react'
-import Head from '../components/Head'
-import Link from 'gatsby-link'
-import { navigateTo } from 'gatsby-link'
-import get from 'lodash/get'
+import Link, { navigateTo } from 'gatsby-link';
+import get from 'lodash/get';
+import React from 'react';
+import Head from '../components/Head';
 
 class BlogPostTemplate extends React.Component {
 
@@ -106,6 +105,7 @@ export const pageQuery = graphql`
         image
         date(formatString: "MMMM DD, YYYY")
         permalink
+        tags
       }
     }
   }

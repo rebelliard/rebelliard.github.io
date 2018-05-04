@@ -1,5 +1,5 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
 const Head = props => {
 
@@ -23,6 +23,7 @@ const Head = props => {
 
       <title>{title}</title>
       <meta name="description" content={props.description}/>
+      <meta name="HandheldFriendly" content="true"/>
       <meta property="og:type" content="article"/>
       <meta name="twitter:card" content={props.twitterCard || 'summary'}/>
       <meta name="twitter:site" content="@rebelliard"/>
@@ -34,6 +35,8 @@ const Head = props => {
       <meta property="article:author" itemProp="author" content="https://www.facebook.com/rebelliard"/>
       <meta name="twitter:title" content={props.title}/>
       <meta property="og:title" content={props.title}/>
+      <meta name="twitter:label1" content="Published by"/>
+      <meta name="twitter:data1" content="Rafael Belliard"/>
 
       <link rel="canonical" href={`${domain}${pathname}`}/>
       <meta name="twitter:url" content={`${domain}${pathname}`}/>
@@ -44,6 +47,14 @@ const Head = props => {
 
       <meta name="og:image" content={image.page || image.avatar}/>
       <meta name="twitter:image:src" content={image.page || image.avatar}/>
+
+      {props.tags
+        && <meta name="twitter:label2" content="Filed under" />}
+
+      {(props.tags || []).map(tag => <meta property="article:tag" content={tag} key={tag}/>)}
+
+      {(props.tags && props.tags.length)
+        && <meta name="twitter:data2" content={props.tags.join(', ')}/>}
 
       <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-icon-180x180.png"/>
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon/apple-icon-144x144.png"/>
