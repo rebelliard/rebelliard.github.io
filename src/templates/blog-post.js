@@ -39,11 +39,7 @@ class BlogPostTemplate extends React.Component {
     }
   }
 
-  /**
-   * @param {{event:Event}} x
-   */
-  render(x) {
-    x.event.target.value
+  render() {
     const post = this.props.data.markdownRemark
     const { location } = this.props
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
