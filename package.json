@@ -2,6 +2,9 @@
   "name": "rafael.do",
   "description": "Rafael Belliard's personal website.",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=8.0.0 < 9.0.0"
+  },
   "author": "Rafael Belliard <me@rafael.do>",
   "bugs": {
     "url": "https://github.com/rebelliard/rebelliard.github.io/issues"
