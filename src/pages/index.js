@@ -48,59 +48,43 @@ class BlogIndex extends React.Component {
       <React.Fragment>
         <article id="more" className="detail">
           <p>
-            I live in the Dominican Republic and I enjoy working
-            with things like Node.js, React.js,
-            Webpack, Gulp, GraphQL, Firebase, PostgreSQL, Jest,
-            and Serverless.
+            I'm a software developer from the Dominican Republic living in the Stockholm County of
+            Sweden. I enjoy working with technologies like Node.js, React.js, Serverless, and
+            GraphQL.
           </p>
 
           <p>
-            I'm passionate about working smart and elevating the
-            developer experience, to facilitate building great user
-            experiences that ship on time.
+            I'm passionate about working smart and elevating the developer experience, to facilitate
+            building great user experiences that ship on time.
           </p>
 
           <p>
-            I occassionally share my thoughts on{' '}
-            <Link to={'/blog/'}>my blog</Link> and{' '}
-            <Link to={'https://twitter.com/rebelliard'}>tweet</Link>.
+            I occassionally share my thoughts on <Link to={'/blog/'}>my blog</Link> and{' '}
+            <a href={'https://twitter.com/rebelliard'} target="_blank" rel="noopener noreferrer">
+              tweet
+            </a>
+            .
           </p>
         </article>
         <article className="detail">
-          <h3>
-            Currently working on
-          </h3>
+          <h3>Currently working on</h3>
           <ul>
             <li>
-              Secret stuff at{' '}
-              <a href="https://vivial.net/"
-                  target="_blank"
-                  rel="noopener noreferrer">Vivial</a> (day job).
+              An innovative employee engagement tool at{' '}
+              <a href="https://www.andfrankly.com/" target="_blank" rel="noopener noreferrer">
+                &frankly
+              </a>{' '}
+              (day job).
             </li>
-            <li>
-              A synced video-watching app for long-distance partners.
-            </li>
+            <li>A synced video-watching app for long-distance partners.</li>
           </ul>
         </article>
         <article className="detail">
-          <h3>
-            Trying to do more of
-          </h3>
+          <h3>Trying to do more of</h3>
           <p>
-            I like speaking about things I've learned and I seek opportunities
-            to offer mentoring. My last talk was on{' '}
-            <a
-                href="https://www.linkedin.com/pulse/python-dominicana-059-django-migrations-rafael-e-belliard"
-                target="_blank"
-                rel="noopener noreferrer">Django Migrations</a>,
-            and I was a coach for{' '}
-            <a
-                href="https://djangogirls.org/santodomingo1/"
-                target="_blank"
-                rel="noopener noreferrer">Django Girls Santo Domingo</a>.
+            I like speaking about things I've learned and I seek opportunities to offer mentoring.
             If you're interested in having me speak or participate at your next event,{' '}
-            <a
-                href="mailto:me@rafael.do">drop me a line</a>!
+            <a href="mailto:me@rafael.do">drop me a line</a>!
           </p>
         </article>
       </React.Fragment>
@@ -113,22 +97,19 @@ class BlogIndex extends React.Component {
 
     return (
       <main id="main" className="section main index">
-        <Head
-          title={siteTitle}
-          description="Personal website."
-          location={location}/>
+        <Head title={siteTitle} description="Personal website." location={location} />
         <article className="hero">
-          <h2>
-            My name is Rafael Belliard and I make
-            software–typically using JavaScript.
-          </h2>
+          <h2>My name is Rafael Belliard and I make software–typically using JavaScript.</h2>
           <p>
-            I develop software architectures, backend services,
-            frontend code, APIs and databases.{' '}
-            {this.state.showDetails
-              ? null
-              : <React.Fragment><a href="#more" onClick={this.toggleDetails}>More about me</a>.</React.Fragment>
-            }
+            I develop software architectures, frontend code, backend services, APIs and databases.{' '}
+            {this.state.showDetails ? null : (
+              <React.Fragment>
+                <a href="#more" onClick={this.toggleDetails}>
+                  More about me
+                </a>
+                .
+              </React.Fragment>
+            )}
           </p>
         </article>
         <this.Details></this.Details>
