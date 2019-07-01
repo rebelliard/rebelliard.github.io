@@ -49,7 +49,7 @@ class BlogIndex extends React.Component {
         <article id="more" className="detail">
           <p>
             I'm a software developer from the Dominican Republic living in the Stockholm County of
-            Sweden. I enjoy working with technologies like Node.js, React.js, Serverless, and
+            Sweden. I enjoy working with technologies like AWS Lambda, Node.js, React.js, and
             GraphQL.
           </p>
 
@@ -76,7 +76,16 @@ class BlogIndex extends React.Component {
               </a>{' '}
               (day job).
             </li>
-            <li>A synced video-watching app for long-distance partners.</li>
+            <li>
+              Studying to get certified as an{' '}
+              <a
+                href="https://aws.amazon.com/certification/certified-developer-associate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                “AWS Certified Developer”
+              </a>.
+            </li>
           </ul>
         </article>
         <article className="detail">
