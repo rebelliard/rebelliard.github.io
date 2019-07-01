@@ -9,17 +9,17 @@ class BlogIndex extends React.Component {
 
   componentDidMount() {
     this.setState({
-      showDetails: window.location.hash === '#more',
+      showDetails: window.location.hash === '#more'
     })
   }
 
-  handleKeyDown = (e) => {
+  handleKeyDown = e => {
     if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
       navigateTo('/blog/')
     }
   }
 
-  componentWillMount(){
+  componentWillMount() {
     if (typeof document !== 'undefined') {
       document.addEventListener('keydown', this.handleKeyDown)
     }
@@ -121,14 +121,12 @@ class BlogIndex extends React.Component {
             )}
           </p>
         </article>
-        <this.Details></this.Details>
+        <this.Details />
       </main>
     )
   }
   render() {
-    return (
-      <this.Main></this.Main>
-    )
+    return <this.Main />
   }
 }
 
