@@ -54,7 +54,7 @@ class BlogIndex extends React.Component {
           </p>
 
           <p>
-            I'm passionate about working smart and elevating the developer experience, to facilitate
+            I'm passionate about working smart and elevating the developer experience to facilitate
             building great user experiences that ship on time.
           </p>
 
@@ -110,7 +110,8 @@ class BlogIndex extends React.Component {
         <article className="hero">
           <h2>My name is Rafael Belliard and I make software–typically using JavaScript.</h2>
           <p>
-            I develop software architectures, frontend code, backend services, APIs and databases.{' '}
+            I develop beautiful frontend code, backend services and APIs. Furthermore, I love
+            communication.{' '}
             {this.state.showDetails ? null : (
               <React.Fragment>
                 <a href="#more" onClick={this.toggleDetails}>
