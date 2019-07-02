@@ -110,7 +110,7 @@ class BlogIndex extends React.Component {
         <article className="hero">
           <h2>My name is Rafael Belliard and I make software–typically using JavaScript.</h2>
           <p>
-            I develop beautiful frontend code, backend services and APIs. Furthermore, I love
+            I develop beautiful frontend code, backend services and APIs. Oh, and I love
             communication.{' '}
             {this.state.showDetails ? null : (
               <React.Fragment>
