@@ -58,13 +58,13 @@ class BlogIndex extends React.Component {
             building great user experiences that ship on time.
           </p>
 
-          <p>
+          {/* <p>
             I occassionally share my thoughts on <Link to={'/blog/'}>my blog</Link> and{' '}
             <a href={'https://twitter.com/rebelliard'} target="_blank" rel="noopener noreferrer">
               tweet
             </a>
             .
-          </p>
+          </p> */}
         </article>
         <article className="detail">
           <h3>Currently working on</h3>
