@@ -31,11 +31,11 @@ class Template extends React.Component {
             to={'/'}>
             About
           </Link>
-          <Link
+          {/* <Link
             className={`nav-item${location.pathname.includes('/blog/') ? ' active' : ''}`}
             to={'/blog/'}>
             Blog
-          </Link>
+          </Link> */}
           <a className="nav-item" href="mailto:me@rafael.do">
             Contact
           </a>
