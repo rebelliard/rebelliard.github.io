@@ -66,7 +66,7 @@ class BlogIndex extends React.Component {
             .
           </p> */}
         </article>
-        <article className="detail">
+        {/* <article className="detail">
           <h3>Currently working on</h3>
           <ul>
             <li>
@@ -95,7 +95,7 @@ class BlogIndex extends React.Component {
             If you're interested in having me speak or participate at your next event,{' '}
             <a href="mailto:me@rafael.do">drop me a line</a>!
           </p>
-        </article>
+        </article> */}
       </React.Fragment>
     )
   }
