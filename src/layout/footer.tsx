@@ -1,59 +1,58 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import 'typeface-roboto-slab'
-import 'typeface-open-sans'
-import '../styles/main.scss'
+import * as React from 'react'
 
-class Template extends React.Component {
-  Header = () => {
-    const { location } = this.props
-    let rootPath = '/'
-    if (typeof __PREFIX_PATHS__ !== 'undefined' && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + '/'
-    }
+export function Footer() {
+  return (
+    <footer id="footer" className="section footer">
+      <h3>Find me online</h3>
+      <nav role="navigation" className="social-icons">
+        <a
+          className="social-icon"
+          href="https://twitter.com/rebelliard"
+          itemProp="sameAs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my Twitter profile"
+          dangerouslySetInnerHTML={svg.twitter}
+        ></a>
+        <a
+          className="social-icon"
+          href="https://www.linkedin.com/in/rebelliard"
+          itemProp="sameAs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my LinkedIn profile"
+          dangerouslySetInnerHTML={svg.linkedin}
+        ></a>
+        <a
+          className="social-icon"
+          href="https://github.com/rebelliard"
+          itemProp="sameAs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+          dangerouslySetInnerHTML={svg.github}
+        ></a>
+        <a
+          className="social-icon"
+          href="https://www.last.fm/user/belliard"
+          itemProp="sameAs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my Last.fm profile"
+          dangerouslySetInnerHTML={svg.lastfm}
+        ></a>
+      </nav>
+    </footer>
+  )
+}
 
-    return (
-      <header className="section header">
-        {rootPath === location.pathname
-          ? <h1 className="header-item title">
-              <Link
-                to={'/'}
-                aria-label="Go to the root page.">rafael.do</Link>
-            </h1>
-          : <div className="header-item title">
-              <Link
-                to={'/'}
-                aria-label="Go to the root page.">rafael.do</Link>
-            </div>}
-        <nav className="header-item nav" role="navigation">
-          <Link
-            className={`nav-item${location.pathname === rootPath ? ' active' : ''}`}
-            to={'/'}>
-            About
-          </Link>
-          {/* <Link
-            className={`nav-item${location.pathname.includes('/blog/') ? ' active' : ''}`}
-            to={'/blog/'}>
-            Blog
-          </Link> */}
-          <a className="nav-item" href="mailto:me@rafael.do">
-            Contact
-          </a>
-        </nav>
-      </header>
-    )
-  }
+function trim(str: string) {
+  return str.replace(/>\s+</g, '><').trim()
+}
 
-  Footer = () => {
-    /**
-     * Trim whitespace.
-     * @see https://stackoverflow.com/a/12014464
-     */
-    const trim = str => str.replace(/>\s+</g, '><').trim()
-
-    const svg = {
-      linkedin: {
-        __html: trim(`
+const svg = {
+  linkedin: {
+    __html: trim(`
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>LinkedIn</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -66,10 +65,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `)
-      },
-      github: {
-        __html: trim(`
+        `),
+  },
+  github: {
+    __html: trim(`
           <svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>GitHub</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -82,10 +81,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `)
-      },
-      twitter: {
-        __html: trim(`
+        `),
+  },
+  twitter: {
+    __html: trim(`
           <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Twitter</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -98,10 +97,10 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `)
-      },
-      lastfm: {
-        __html: trim(`
+        `),
+  },
+  lastfm: {
+    __html: trim(`
           <svg width="25px" height="14px" viewBox="0 0 25 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Last.fm</title>
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -114,61 +113,6 @@ class Template extends React.Component {
                 </g>
             </g>
           </svg>
-        `)
-      }
-    }
-
-    return (
-      <footer id="footer" className="section footer">
-        <h3>Find me online</h3>
-        <nav role="navigation">
-          <a
-            className="social-icon"
-            href="https://twitter.com/rebelliard"
-            itemProp="sameAs"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit my Twitter profile"
-            dangerouslySetInnerHTML={svg.twitter}></a>
-          <a
-            className="social-icon"
-            href="https://www.linkedin.com/in/rebelliard"
-            itemProp="sameAs"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit my LinkedIn profile"
-            dangerouslySetInnerHTML={svg.linkedin}></a>
-          <a
-            className="social-icon"
-            href="https://github.com/rebelliard"
-            itemProp="sameAs"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit my GitHub profile"
-            dangerouslySetInnerHTML={svg.github}></a>
-          <a
-            className="social-icon"
-            href="http://www.last.fm/user/belliard"
-            itemProp="sameAs"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit my Last.fm profile"
-            dangerouslySetInnerHTML={svg.lastfm}></a>
-        </nav>
-      </footer>
-    )
-  }
-
-  render() {
-    const main = this.props.children
-    return (
-      <div className="container">
-        <this.Header></this.Header>
-        {main()}
-        <this.Footer></this.Footer>
-      </div>
-    )
-  }
-}
-
-export default Template
+        `),
+  },
+} as const

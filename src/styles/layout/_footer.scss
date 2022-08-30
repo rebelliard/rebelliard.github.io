@@ -3,6 +3,11 @@
   padding-top: 4em;
   padding-bottom: 2.3em;
 
+  .social-icons {
+    display: inline-flex;
+    align-items: center;
+  }
+
   .social-icon {
     margin-left: 0.6em;
     margin-right: 0.6em;

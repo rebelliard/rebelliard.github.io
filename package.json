@@ -3,61 +3,50 @@
   "description": "Rafael Belliard's personal website.",
   "version": "1.0.0",
   "engines": {
-    "node": ">=8.0.0 < 9.0.0"
+    "node": ">=16.0.0"
   },
   "author": "Rafael Belliard <me@rafael.do>",
-  "bugs": {
-    "url": "https://github.com/rebelliard/rebelliard.github.io/issues"
-  },
-  "dependencies": {
-    "gatsby": "^1.9.254",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-feed": "^1.3.20",
-    "gatsby-plugin-google-analytics": "^1.0.29",
-    "gatsby-plugin-offline": "^1.0.15",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sharp": "^1.6.42",
-    "gatsby-plugin-twitter": "^1.0.20",
-    "gatsby-remark-copy-linked-files": "^1.5.31",
-    "gatsby-remark-images": "^1.5.61",
-    "gatsby-remark-prismjs": "^1.2.24",
-    "gatsby-remark-responsive-iframe": "^1.4.18",
-    "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-source-filesystem": "^1.5.31",
-    "gatsby-transformer-remark": "^1.7.40",
-    "gatsby-transformer-sharp": "^1.6.22",
-    "lodash": "^4.17.21",
-    "react": "^16.3.2",
-    "react-dom": "^16.11.0",
-    "typeface-open-sans": "^0.0.54",
-    "typeface-roboto-slab": "^0.0.72"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.0"
-  },
   "homepage": "https://rafael.do",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rebelliard/rebelliard.github.io.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --no-semi --single-quote --write --print-width 100 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "clean": "rm -rf public/* && cp CNAME public",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master && yarn clean",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master && npm run clean",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.3",
+    "gatsby": "^4.21.1",
+    "gatsby-plugin-google-analytics": "^4.21.0",
+    "gatsby-plugin-image": "^2.21.0",
+    "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-mdx": "^4.0.0",
+    "gatsby-plugin-sass": "^5.21.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-plugin-sitemap": "^5.21.0",
+    "gatsby-source-filesystem": "^4.21.1",
+    "gatsby-transformer-sharp": "^4.21.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.54.6",
+    "typeface-open-sans": "^1.1.13",
+    "typeface-roboto-slab": "^1.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
   }
 }
