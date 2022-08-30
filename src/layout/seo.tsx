@@ -5,7 +5,10 @@ export interface SEOProps {
   title?: string
   description?: string
   pathname: string
-  twitterCard?: string
+  /**
+   * @see https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started
+   */
+  twitterCard?: 'summary' | 'summary_large_image' | 'app' | 'player'
   tags?: string[]
   image?: string
 }
@@ -19,21 +22,13 @@ export function SEO({
   pathname,
   children,
 }: React.PropsWithChildren<SEOProps>) {
-  const {
-    title: defaultTitle,
-    description: defaultDescription,
-    image: defaultImage,
-    siteUrl,
-    author,
-    twitterUsername,
-    facebookProfile,
-    facebookProfileId,
-  } = useSiteMetadata()
+  const { siteUrl, author, twitterUsername, facebookProfile, facebookProfileId, ...metadata } =
+    useSiteMetadata()
 
   const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    title: title || metadata.title,
+    description: description || metadata.description,
+    image: `${siteUrl}${image || metadata.image}`,
     url: `${siteUrl}${pathname || ''}`,
     author,
     twitterUsername,
@@ -44,7 +39,7 @@ export function SEO({
   return (
     <>
       <title>{seo.title}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={seo.description} />
       <meta name="HandheldFriendly" content="true" />
       <meta property="og:type" content="article" />
       <meta name="twitter:card" content={twitterCard || 'summary'} />
@@ -64,8 +59,8 @@ export function SEO({
       <meta name="twitter:url" content={seo.url} />
       <meta property="og:url" content={seo.url} />
 
-      <meta name="twitter:description" content={description} />
-      <meta property="og:description" content={description} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta property="og:description" content={seo.description} />
 
       <meta name="og:image" content={seo.image} />
       <meta name="twitter:image:src" content={seo.image} />
