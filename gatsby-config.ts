@@ -2,7 +2,7 @@ import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'Rafael Belliard - Software developer',
+    title: 'Rafael Belliard - Software engineer',
     author: 'Rafael Belliard',
     description: 'My personal site.',
     siteUrl: 'https://rafael.do/',

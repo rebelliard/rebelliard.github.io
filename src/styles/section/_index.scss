@@ -1,13 +1,21 @@
 .main {
   border: 7px solid $color-highlight;
-  box-shadow: 5px 6px 0 0 #FFF53C;
+  box-shadow: 5px 6px 0 0 #fff53c;
   padding: 40px;
 
   h3 {
     margin-top: 30px;
   }
 
-  .detail {
+  .details {
+    height: 0;
+    visibility: hidden;
+
+    &.show {
+      height: auto;
+      visibility: visible;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -46,7 +54,7 @@ article {
       &:focus,
       &:active {
         border-bottom: 1px solid;
-        border-image: linear-gradient(to right,  $color-highlight 10%, $color-heading-h1) 5;
+        border-image: linear-gradient(to right, $color-highlight 10%, $color-heading-h1) 5;
         // Safari: We need to specify where to border,
         // or else, a square will border the element.
         border-image-width: 0 0 1.5px 0;

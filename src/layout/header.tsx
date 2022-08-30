@@ -9,7 +9,7 @@ export function Header() {
       </h1>
       <nav className="header-item nav" role="navigation">
         <a className="nav-item" href="mailto:me@rafael.do">
-          Contact
+          Contact me
         </a>
       </nav>
     </header>
