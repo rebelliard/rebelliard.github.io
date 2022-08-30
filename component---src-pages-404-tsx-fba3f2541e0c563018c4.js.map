@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-404-tsx-fba3f2541e0c563018c4.js","mappings":"kHAOA,UALqB,WACnB,OAAO,IADT,C","sources":["webpack://rafael.do/./src/pages/404.tsx"],"sourcesContent":["import { navigate } from 'gatsby'\n\nconst NotFoundPage = () => {\n  return null\n  // return navigate('/')\n}\n\nexport default NotFoundPage\n"],"names":[],"sourceRoot":""}
