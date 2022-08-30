@@ -28,8 +28,8 @@ export default function IndexPage() {
         <article id="more" className={classNames('details', showDetails && 'show')}>
           <p>
             I'm a software engineer from the Dominican Republic living in the Stockholm County of
-            Sweden. I enjoy working with technologies like React.js, TypeScript, GraphQL and
-            Serverless functions.
+            Sweden. I enjoy working with technologies like React.js, TypeScript, GraphQL, Serverless
+            functions and web accessibility.
           </p>
           <p>
             I'm passionate about working smart and elevating the developer experience to facilitate
